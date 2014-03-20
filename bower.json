@@ -1,0 +1,17 @@
+{
+  "name": "mdk-html5-ui-svn",
+  "version": "1.0.0",
+  "repository": {
+    "type": "svn",
+    "url": "svn+http://svndav.adeuza.fr/Movalys/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
+  },
+  "description": "MDK HTML 5 UI Framework",
+  "json": "bower.json",
+  "dependencies": {
+    "mdk-html5-core-svn": "../mdk-html5-core.svn",
+    "sass-bootstrap": "^3.0.2"
+  },
+  "devDependencies": {
+  },
+  "private": true 
+}

@@ -1,0 +1,8 @@
+{
+    "directory": "vendor",
+    "registry": {
+        "search": ["http://172.22.182.55:8000/","https://bower.herokuapp.com/"],
+        "register": "http://172.22.182.55:8000/"
+    }
+}
+
