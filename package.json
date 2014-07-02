@@ -6,12 +6,7 @@
   "homepage": "http://git.adeuza.fr/mdk-html5-ui",
   "description": "MDK HTML5 UI Framework",
   "main": [
-    "dist/js/*"
   ],
-  "scripts": [
-      "dist/js/mdk-html5-ui.js",
-      "dist/js/mdk-html5-ui-angular.js"
-    ],
   "repository": {
     "type": "svn",
     "url": "http://svndav.adeuza.fr/Movalys/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
@@ -22,33 +17,18 @@
     "ui",
     "framework"
   ],
-  "author": "Sopra Group",
+  "author": "Sopra",
   "license": "BSD",
   "devDependencies": {
-    "grunt": "^0.4.1",
-    "grunt-contrib-clean": "~0.4.1",
-    "grunt-bump": "0.0.13",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-copy": "~0.5.0",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-jshint": "~0.8.0",
-    "grunt-contrib-uglify": "~0.3.2",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-ddescribe-iit": "0.0.4",
-    "grunt-merge-conflict": "0.0.2",
-    "grunt-remove-logging": "~0.2.0",
-    "grunt-sass": "^0.11.0",
-    "grunt-string-replace": "~0.2.7",
-    "load-grunt-tasks": "~0.3.0",
-    "grunt-conventional-changelog": "~1.1.0",
-    "dgeni": "^0.1.1",
-    "dgeni-packages": "^0.2.4"
+    "grunt": "0.4.5",
+    "load-grunt-tasks": "0.6.0",
+    "grunt-contrib-sass": "0.7.3",
+    "grunt-contrib-jshint": "0.10.0",
+    "jshint-stylish": "0.2.0"
   },
   "ignore": [
     "**/.*",
     "Gruntfile.js",
-    "package.json",
-    "dist/js",
-    "js/test"
+    "package.json"
   ]
 }
