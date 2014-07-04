@@ -8,12 +8,26 @@
   "description": "MDK HTML 5 UI Framework",
   "json": "bower.json",
   "dependencies": {
-    "mdk-html5-core": "Cotopaxi",
-    "bootstrap-sass-official": "3.1.1"
+    "angular-cookies": "1.2.18",
+    "angular-sanitize": "1.2.18",
+    "angular-route": "1.2.18",
+    "angular-animate": "1.2.18",
+    "angular-touch": "1.2.18",
+    "angular-ui-router": "0.2.10",
+    "angular-bootstrap": "0.11.0",
+    "angular-snap": "1.5.1",
+    "angular-bindonce": "0.3.1",
+    "angular-growl-v2": "0.6.1",
+    "angular-translate-storage-cookie": "2.0.0",
+    "bootstrap-sass-official": "3.1.1",
+    "normalize-css": "3.0.1",
+    "snapjs": "1.9.3"
   },
   "devDependencies": {},
   "private": true,
   "main": [
+    "lib/mfuiModule.js",
+    "lib/actions/MFUpdateVMWithDataLoaderAction.js",
     "lib/controllers/MFControllerLauncher.js",
     "lib/controllers/RootScopeCtrl.js",
     "lib/controllers/config/MFControllerConfig.js",
@@ -68,6 +82,7 @@
     "lib/modal/ErrorDialogCtrl.js",
     "lib/modal/MFFormModals.js",
     "lib/modal/angularGrowl.js",
+    "lib/utils/swipe.js",
     "lib/viewmodels/MFAbstractViewModel.js",
     "lib/viewmodels/MFAbstractViewModelFactory.js",
     "lib/viewmodels/componentsVM/MFAddressLocationVM.js",
@@ -78,5 +93,10 @@
     "lib/viewmodels/componentsVM/factories/MFComboVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFPhotoVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js"
-  ]
+  ],
+  "overrides": {
+    "ngCordova": {
+      "main": "dist/ng-cordova.min.js"
+    }
+  }
 }

@@ -25,9 +25,9 @@ module.exports = function(grunt) {
 
     sass: {
       main: {
-		files: {
-			'build/framework.css': 'assets/styles/framework.scss',
-		}
+		    files: {
+			   'build/framework.css': 'assets/styles/framework.scss',
+		    }
       }
     }
 
@@ -46,13 +46,16 @@ module.exports = function(grunt) {
 
     var bowerObj = JSON.parse(grunt.file.read(bowerFile));
     bowerObj.main = [];
+    bowerObj.main.push('lib/mfuiModule.js');
 
     this.data.src.forEach(function(pattern) {
       grunt.file.expand(pattern).forEach( function(file) {
-        bowerObj.main.push(file);
+        if ( file !== 'lib/mfuiModule.js') {
+          bowerObj.main.push(file);
+        }
       });
     });
-  
+
     grunt.file.write(bowerFile, JSON.stringify(bowerObj, null, 2));
   });
 };
