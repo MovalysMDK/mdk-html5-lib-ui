@@ -77,6 +77,7 @@
     "lib/directives/MfTextview/MfTextview.js",
     "lib/directives/MfUrlfield/MfUrlfield.js",
     "lib/directives/MfValidation.js",
+    "lib/directives/MfValueImage/MfValueImage.js",
     "lib/directives/MfWatchers.js",
     "lib/modal/ConfirmDialogCtrl.js",
     "lib/modal/DialogsConfig.js",
@@ -89,11 +90,14 @@
     "lib/viewmodels/componentsVM/MFAddressLocationVM.js",
     "lib/viewmodels/componentsVM/MFComboVM.js",
     "lib/viewmodels/componentsVM/MFPhotoVM.js",
+    "lib/viewmodels/componentsVM/MFPictureTypeEnum.js",
     "lib/viewmodels/componentsVM/MFRadioVM.js",
+    "lib/viewmodels/componentsVM/MFValueImageVM.js",
     "lib/viewmodels/componentsVM/factories/MFAddressLocationVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFComboVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFPhotoVMFactory.js",
-    "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js"
+    "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js",
+    "lib/viewmodels/componentsVM/factories/MFValueImageVMFactory.js"
   ],
   "overrides": {
     "ngCordova": {

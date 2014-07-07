@@ -1,0 +1,13 @@
+<div bindonce bo-class="getCssClassesContainer()" >
+    <mf-label
+        mf-required-field="false"
+        mf-text="{{mfLabel}}"
+        mf-associated-field="{{mfId}}"
+        mf-hide-label="{{mfHideLabel}}"
+        ng-if="mfLabel"
+    ></mf-label>
+
+    <div bo-class="getCssClassesInputContainer()">
+        <img ng-src="{{mfField.pictureURI}}" alt="{{mfField.pictureName}}" ng-style="imgStyle()" class="mf-value-image"/>
+    </div>
+</div>
