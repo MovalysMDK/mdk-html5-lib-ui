@@ -1,8 +1,7 @@
 {
     "directory": "vendor",
     "registry": {
-        "search": ["http://nansrvintc2.adeuza.fr:8000/packages","https://bower.herokuapp.com/"],
-        "register": "http://nansrvintc2.adeuza.fr:8000/packages"
+        "search": ["http://nansrvintc2.adeuza.fr:8000","https://bower.herokuapp.com/"]
     }
 }
 
