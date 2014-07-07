@@ -1,0 +1,9 @@
+div.input-group input[type=email] {
+  line-height: 20px;
+}
+
+div.input-group span.input-group-btn a {
+  line-height: 20px;
+  margin-top: 0.3rem; /* as <input> */
+  top: 0px; /* cancels glyphicon top:1px */
+}

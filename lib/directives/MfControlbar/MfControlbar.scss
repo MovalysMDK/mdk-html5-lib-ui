@@ -1,0 +1,125 @@
+/**
+ * Styles for directive mf-controlbar
+ */
+
+.navbar-inverse {
+    background-color: $navbar-inverse-bg;
+    color: $navbar-inverse-text;
+    height: 55px;
+}
+
+.button-snap-opened {
+
+  @extend .glyphicon;
+  @extend .glyphicon-list;
+}
+
+.button-snap-closed {
+  @extend .glyphicon;
+  @extend .glyphicon-list;
+  transform: translate(-4px,0);
+  -webkit-transform: translate(-4px,0);
+  -o-transform: translate(-4px,0);
+  -moz-transform: translate(-4px,0);
+}
+
+
+.navbar-header {
+    width: 100%;
+    position: relative;
+    margin: 0;
+
+    .title-app {
+        float: left;
+        height: 55px;
+        font-size: 2rem;
+
+        img {
+            width: auto;
+            height: 5rem;
+        }
+
+        ul{
+            margin-top: 0;
+
+            li {
+                padding: 0;
+            }
+        }
+    }
+
+    .active-bar {
+        margin-top: 8px;
+        height: 47px;
+        font-size: 24px;
+
+        .dropdown-menu{
+            a{
+                color: $navbar-inverse-dropdown-link;
+                cursor: pointer;
+
+                &:hover, &:focus {
+                    color: $navbar-inverse-dropdown-link-hover;
+                }
+            }
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
+
+      li{
+            padding-left: 2px;
+            padding-right: 2px;
+            vertical-align: middle;
+
+            &:last-child{
+                padding-right: 1rem;
+            }
+
+            a {
+                color: $navbar-inverse-link;
+
+                div{
+                    width: 20px;
+
+                    span.icon-bar{
+                        display: block;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 1px;
+                        background-color: $navbar-inverse-link;
+                        margin-bottom: 4px;
+                        margin-left:auto;
+                        margin-right:auto;
+
+                        &:last-child{
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                &:hover, &:focus {
+                    color: $navbar-inverse-link-hover;
+
+                    span.icon-bar{
+                        background-color: $navbar-inverse-link-hover;
+                    }
+                }
+            }
+
+        }
+    }//.navbar-header ul
+
+
+}
+
+//menu navbar collapsible fix
+// @media (max-width: 767px) {
+//     .visible-xs.collapse.in {
+//         display: block!important;
+//     }
+//     .visible-xs.collapse {
+//         display: none!important;
+//     }
+// }

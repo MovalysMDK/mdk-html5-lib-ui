@@ -1,0 +1,48 @@
+
+snap-content,
+[snap\:content],
+[snap-content],
+[data-snap-content],
+[x-snap-content],
+.snap-content,
+.x-snap-content,
+snap-drawers,
+[snap\:drawers],
+[snap-drawers],
+[data-snap-drawers],
+[x-snap-drawers],
+.snap-drawers,
+.x-snap-drawers,
+.snap-drawers,
+.snap-content {
+
+    // margin-top: 55px;
+}
+
+snap-drawer,
+[snap\:drawer],
+[snap-drawer],
+[data-snap-drawer],
+[x-snap-drawer],
+.snap-drawer,
+.x-snap-drawer,
+.snap-drawer {
+
+    height: 100%;
+}
+
+.snap-content {
+
+    background-color: $container-bg;
+    -moz-box-shadow: 0 0 20px #888;
+    -webkit-box-shadow: 0 0 20px #888;
+    box-shadow: 0 0 20px #888;
+}
+
+.snapWithMargin{
+	margin-top: 55px;
+}
+
+.snapWithoutMargin{
+	margin-top: 0px;
+}

@@ -1,0 +1,97 @@
+
+ul.mflist-1D  {
+  @extend .list-group;
+
+}
+ul.mflist-1D .mflist-item {
+  @extend .list-group-item;
+}
+
+ul.mflist-1D li {
+  list-style-type: none;
+}
+
+ul.mflist-1D .selected {
+  color: #FFFFFF;
+  background-color: #545454;
+}
+
+ul.mflist-1D .mflist-item:hover {
+  color: #FFFFFF;
+  background-color: #545454;
+}
+ul.mflist-1D .mflist-item.selected {
+  color: #FFFFFF;
+  background-color: #545454;
+}
+
+ul.mflist-1D li .mflist-item-header {
+  @extend .list-group-item-heading;
+}
+
+ul.mflist-1D li .mflist-item-body {
+  @extend .list-group-item-text;
+}
+
+.mflist-item-plus {
+
+  @extend .glyphicon;
+  @extend .glyphicon-plus;
+  position:absolute;
+  z-index: 300;
+  right:0;
+  top:50%;
+
+}
+
+.mflist-item-chevron {
+
+  @extend .glyphicon;
+  @extend .glyphicon-chevron-right;
+  position:absolute;
+  z-index: 300;
+  right:0;
+  top:50%;
+
+}
+
+/*
+===================
+== LIST 2D
+===================
+*/
+
+
+.mflist-2D .mflist-sublist{
+  @extend .list-group;
+
+}
+.mflist-2D .mflist-sublist li{
+  @extend .list-group-item;
+  border-bottom:5px;
+
+}
+
+.mflist-2D .mflist-item-header {
+  @extend .list-group-item-heading;
+
+}
+
+.mflist-2D .mflist-item-body {
+  @extend .list-group-item-text;
+}
+
+
+.mflist-2D .mflist-sublist li:hover {
+  color: #FFFFFF;
+  background-color: #545454;
+}
+.mflist-2D .mflist-sublist li.selected {
+  color: #FFFFFF;
+  background-color: #545454;
+}
+
+
+.panel-heading {
+  position: relative;
+}

@@ -1,0 +1,38 @@
+<div bindonce bo-class="getCssClassesContainer()" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <mf-label
+            mf-required-field="{{mfRequired}}"
+            mf-text="{{mfLabel}}"
+            mf-associated-field="{{mfId}}"
+            mf-hide-label="{{mfHideLabel}}"
+            ng-if="mfLabel"
+        ></mf-label>
+
+        <div bo-class="getCssClassesInputContainer()">
+            <div class="input-group">
+                <input
+                    type="url"
+                    class="form-control"
+                    ng-model="mfField"
+                    ng-readonly="mfReadonly"
+                    ng-required="mfRequired"
+                    ng-disabled="!actions.isInEditionMode()"
+                    placeholder="{{mfPlaceholder}}"
+                    bo-attr
+                    bo-id="mfId"
+                    name="input"
+                    ng-click="getFocus()"
+                />
+                <span class="input-group-btn">
+                    <a href="{{mfField}}"
+                       class="btn btn-default glyphicon glyphicon-new-window"
+                       ng-disabled="isEmpty() || showError(form.input,'pattern')"
+                       target="_blank">
+                    </a>
+                </span>
+            </div>
+            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+            <span class="help-block" ng-if="showError(form.input,'url')" translate="field.error.url"></span>
+        </div>
+    </ng-form>
+</div>

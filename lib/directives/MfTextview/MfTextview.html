@@ -1,0 +1,17 @@
+<div bindonce bo-class="getCssClassesContainer()">
+    <mf-label
+        mf-required-field="false"
+        mf-text="{{mfLabel}}"
+        mf-associated-field="{{mfId}}"
+        mf-hide-label="{{mfHideLabel}}"
+        ng-if="mfLabel"
+    ></mf-label>
+
+    <div bo-class="getCssClassesInputContainer()">
+        <span
+            class="mfTextview"
+            ng-bind="mfField"
+            bo-id="mfId">
+        </span>
+    </div>
+</div>

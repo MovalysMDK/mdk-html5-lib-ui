@@ -1,0 +1,24 @@
+<div bindonce bo-class="getCssClassesContainer()" ng-class="getCssError(form)">
+<ng-form name="form">
+        <mf-label
+        mf-required-field="{{mfRequired}}"
+        mf-text="{{mfLabel}}"
+        mf-associated-field="{{mfId}}"
+        mf-hide-label="{{mfHideLabel}}"
+        ng-if="mfLabel">
+        </mf-label>
+        <div bo-class="getCssClassesInputContainer()" data-snap-ignore="true">
+            <canvas
+                    name="canvas"
+                    ng-disabled="!actions.isInEditionMode() || mfReadonly"
+                    style="padding:0px;"
+                    width="{{mfWidthCanvas}}" height="{{mfHeightCanvas}}"
+                    class="mfSignatureCanvas well" bo-attr bo-id="mfId"
+                    ng-mousemove="onmousemove($event)"
+                   >
+            </canvas>
+            <span class="glyphicon glyphicon-trash" ng-click="clear()" ng-disabled="!actions.isInEditionMode() || mfReadonly"/>
+            <span class="help-block" ng-if="showError(form,'required')" translate="field.error.required"></span>
+        </div>
+    </ng-form>
+</div>

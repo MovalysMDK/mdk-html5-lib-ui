@@ -1,0 +1,15 @@
+/**
+ * Dialogs styles for Angular ui bootstrap modal
+ */
+
+.modal-error, .modal-confirm{
+  background-color: $brand-danger;
+  h3{
+    margin: 0;
+    color: white;
+  }
+}
+
+.modal-confirm{
+  background-color: $brand-warning;
+}

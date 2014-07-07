@@ -1,0 +1,22 @@
+<div bindonce bo-class="getCssClassesContainer()" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <mf-label
+                mf-required-field="{{mfRequired}}"
+                mf-text="{{mfLabel}}"
+                mf-associated-field="{{mfId}}"
+                mf-hide-label="{{mfHideLabel}}"
+                ng-if="mfLabel"
+                ></mf-label>
+        <span bo-class="getCssClassesInputContainer()" data-snap-ignore="true">
+                <input style="width:80%; display: inline;" type="range" min='{{mfMinValue}}' max='{{mfMaxValue}}' step='{{mfStepValue}}'
+                       ng-model="mfField"
+                       ng-readonly="mfReadonly"
+                       ng-required="mfRequired"
+                       ng-disabled="!actions.isInEditionMode()">
+        </span>
+        <span class="col-sm-1">
+            <h4  ng-show="showValue" style="float:right; margin-top:2pt; width: 18%">{{mfField}}</h4>
+        </span>
+
+    </ng-form>
+</div>

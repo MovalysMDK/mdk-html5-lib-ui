@@ -1,0 +1,35 @@
+<div bindonce bo-class="getCssClassesContainer()" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <mf-label
+            mf-required-field="{{mfRequired}}"
+            mf-text="{{mfLabel}}"
+            mf-associated-field="{{mfId}}"
+            mf-hide-label="{{mfHideLabel}}"
+            ng-if="mfLabel"
+        ></mf-label>
+
+        <div bo-class="getCssClassesInputContainer()">
+            <input
+                type="number"
+                class="form-control"
+                ng-model="mfField"
+                ng-readonly="mfReadonly"
+                ng-required="mfRequired"
+                ng-disabled="!actions.isInEditionMode()"
+                placeholder="{{mfPlaceholder}}"
+                bo-attr
+                bo-id="mfId"
+                name="input"
+                min="{{mfMin}}"
+                max="{{mfMax}}"
+                ng-pattern="{{mfPattern}}"
+                ng-click="getFocus()"
+            />
+            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+            <span class="help-block" ng-if="showError(form.input,'number')" translate="field.error.number"></span>
+            <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.double"></span>
+            <span class="help-block" ng-if="showError(form.input,'min')" translate="field.error.min" translate-values="{ value: '{{mfMin}}'}"></span>
+            <span class="help-block" ng-if="showError(form.input,'max')" translate="field.error.max" translate-values="{ value: '{{mfMax}}'}"></span>
+        </div>
+    </ng-form>
+</div>

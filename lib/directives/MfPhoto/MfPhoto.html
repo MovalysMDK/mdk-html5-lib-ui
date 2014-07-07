@@ -1,0 +1,47 @@
+<div bindonce bo-class="getCssClassesContainer()"  ng-disabled="!actions.isInEditionMode() || mfReadonly" >
+    <ng-form name="form">
+        <mf-label
+            mf-required-field="{{mfRequired}}"
+            mf-text="{{mfLabel}}"
+            mf-associated-field="{{mfId}}"
+            mf-hide-label="{{mfHideLabel}}"
+            ng-if="mfLabel"
+        ></mf-label>
+
+        <div bo-class="getCssClassesInputContainer()" class="media" id="{{mfId}}">
+            <div class="pull-left">
+                <img ng-src="{{mfField.uri}}" alt="no-photo" class="media-object img-thumbnail" style="max-width:100px; " />
+                <input mf-photo-input-update type="file" accept="image/*" capture="camera" name="input" class="photo-input" id="{{mfIdInput}}" style="display: none;"/>
+            </div>
+            <div class="media-body">
+                <mf-textfield
+                        mf-field="mfField.name"
+                        mf-label="field.mfphoto.name.label"
+                        mf-readonly = "mfReadonly"
+                        mf-required="mfRequired"
+                        mf-css-class-container="media-heading"
+                        ></mf-textfield>
+                <mf-date-time
+                        mf-field="mfField.date"
+                        mf-label="field.mfphoto.date.label"
+                        mf-required="mfRequired"
+                        mf-readonly = "mfReadonly"
+                        ></mf-date-time>
+                <mf-combo mf-required="mfRequired" mf-readonly="mfReadonly" mf-label="field.mfphoto.state.label" mf-field="mfField.photoState" mf-displayed-attributes="key"></mf-combo>
+                <mf-multilinefield
+                    mf-field="mfField.desc"
+                    mf-label="field.mfphoto.desc.label"
+                    mf-readonly = "mfReadonly"
+                ></mf-multilinefield>
+
+                <mf-minimized-location
+                        mf-required="false"
+                        mf-readonly = "mfReadonly"
+                        mf-label='field.mfphoto.location.label'
+                        mf-field="mfField.photoLocation">
+                </mf-minimized-location>
+
+            </div>
+        </div>
+    </ng-form>
+</div>

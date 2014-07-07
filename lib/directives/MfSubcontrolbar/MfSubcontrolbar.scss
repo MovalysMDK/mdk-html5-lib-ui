@@ -1,0 +1,20 @@
+/**
+ * Styles for directive mf-subcontrolbar
+ */
+
+.subcontrolbar .navbar{
+	height: 40px;
+	min-height: 40px;
+
+	.active-bar {
+		margin-top: 5px;
+		height: 35px;
+		font-size: 20px;
+	}
+
+	.title-app {
+		padding-left: 0.5rem;
+		height: inherit;
+	}
+
+}

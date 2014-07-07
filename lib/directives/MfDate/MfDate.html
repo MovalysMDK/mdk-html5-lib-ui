@@ -1,0 +1,29 @@
+<div bindonce bo-class="getCssClassesContainer()" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <mf-label
+                mf-required-field="{{mfRequired}}"
+                mf-text="{{mfLabel}}"
+                mf-associated-field="{{mfId}}"
+                mf-hide-label="{{mfHideLabel}}"
+                ng-if="mfLabel"
+                ></mf-label>
+
+        <div bo-class="getCssClassesInputContainer()">
+            <input
+                    mf-date-input
+                    class="form-control"
+                    ng-model="mfField"
+                    ng-readonly="mfReadonly"
+                    ng-required="mfRequired"
+                    ng-disabled="!actions.isInEditionMode()"
+                    bo-id="mfId"
+                    name="input"
+                    min="{{mfMinDate}}"
+                    max="{{mfMaxDate}}"
+                    ng-click="getFocus()"
+                    />
+            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+            <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.date"></span>
+        </div>
+    </ng-form>
+</div>

@@ -1,0 +1,60 @@
+<header ng-hide="!controlBarEnabled" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+
+        <div class="title-app">
+            <ul class="list-inline">
+                <li ng-if="controlbar.buttonSlidingMenu()" snap-toggle="left" ng-class="controlbar.getCssSnap()">
+                </li>
+                <li ng-if="controlbar.buttonBack()">
+                    <a href="" ng-click="controlbar.goBack()"><span class="glyphicon glyphicon-chevron-left margin-top-8 button-back"></span></a>
+                </li>
+                <li bindonce bo-show="controlbar.buttonHome()">
+                    <a href="" ng-click="controlbar.goHome()" snap-close><img src="assets/pictures/ab_logo.png"/></a>
+                </li>
+                <li bindonce bo-class="controlbar.getCssShowTitle()">
+                    <!--<span refresh-on="'refreshMfTitle'" bindonce bo-text="mfTitle" ></span>-->
+                    <span>{{controlbar.getTitleText() | translate}}</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="active-bar pull-right">
+            <ul class="list-inline">
+                <!-- button save -->
+                <li ng-if="controlbar.buttonSave()"><a href="" ng-click="controlbar.goSave()" snap-close><span class="glyphicon glyphicon-floppy-disk"></span></a></li>
+                <!-- button edit -->
+                <li ng-if="controlbar.buttonEdit()"><a href="" ng-click="controlbar.goEdit()" snap-close><span class="glyphicon glyphicon-pencil"></span></a></li>
+                <!-- button cancel -->
+                <li ng-if="controlbar.buttonCancel()"><a href="" ng-click="controlbar.goCancel()" snap-close><span class="glyphicon glyphicon-remove"></span></a></li>
+                <!-- button add -->
+                <li ng-if="controlbar.buttonAdd()"><a href="" ng-click="controlbar.goAdd()" snap-close><span class="glyphicon glyphicon-plus"></span></a></li>
+                <!-- button remove -->
+                <li ng-if="controlbar.buttonRemove()"><a href="" ng-click="controlbar.goRemove()" snap-close><span class="glyphicon glyphicon-trash"></span></a></li>
+                <!-- button options/menu -->
+                <li bindonce bo-show="controlbar.buttonActionMenu()" class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <div>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu pull-right">
+                        <li>
+                          <a>Help</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                          <a>Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                          <a>Exit</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </div><!-- /.navbar-header -->
+</header>

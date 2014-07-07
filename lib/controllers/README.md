@@ -1,0 +1,4 @@
+- MFControllerLauncher: control whether the app init has been done, start it if not done, manage init events.
+- MFDataViewScopeBuilder : make a scope compatible with the mdk loading process (MFLoadDataGenericAction+ MFUpdateVMWithDataLoader). It adds the methods createViewModel() and doFillAction(). MFViewScopeBuilder uses MFControllerLauncher.
+- MFFormScopeBuilder : allows a scope to manage a mdk form (edit mode, cancel, save, exit, modals, etc...). MFFormScopeBuilder uses MFViewScopeBuilder.
+- MFFListScopeBuilder : allows a scope to manage a mdk list of items. It adds the methods navigationDetail and navigateNew. MFListScopeBuilder uses MFViewScopeBuilder.

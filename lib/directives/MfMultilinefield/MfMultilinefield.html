@@ -1,0 +1,30 @@
+<div bindonce bo-class="getCssClassesContainer()" ng-class="getCssError(form.textarea)">
+    <ng-form name="form">
+        <mf-label
+                mf-required-field="{{mfRequired}}"
+                mf-text="{{mfLabel}}"
+                mf-associated-field="{{mfId}}"
+                mf-hide-label="{{mfHideLabel}}"
+                ng-if="mfLabel"
+                ></mf-label>
+
+        <div bo-class="getCssClassesInputContainer()">
+            <textarea
+                class="form-control"
+                ng-model="mfField"
+                ng-readonly="mfReadonly"
+                ng-required="mfRequired"
+                ng-disabled="!actions.isInEditionMode()"
+                placeholder="{{mfPlaceholder}}"
+                bo-attr
+                bo-id="mfId"
+                name="textarea"
+                rows="{{mfRows}}"
+                mf-format="{{mfFormat}}"
+                mf-validation="{{mfValidation}}"
+                ng-click="getFocus()"
+            ></textarea>
+            <span class="help-block" ng-if="showError(form.textarea,'required')" translate="field.error.required"></span>
+        </div>
+    </ng-form>
+</div>

@@ -1,0 +1,28 @@
+<div bindonce bo-class="getCssClassesContainer()" ng-class="getCssError(form.select)">
+    <ng-form name="form">
+        <mf-label
+            mf-required-field="{{mfRequired}}"
+            mf-text="{{mfLabel}}"
+            mf-associated-field="{{mfId}}"
+            mf-hide-label="{{mfHideLabel}}"
+            ng-if="mfLabel"
+        ></mf-label>
+
+        <div bo-class="getCssClassesInputContainer()">
+            <select
+                class="form-control selectPicker"
+                value="{{ item[mfField.valueAttribute] }}"
+                name="select"
+                ng-model="mfField.selectedItemValue"
+                ng-required="mfRequired"
+                ng-readonly="mfReadonly"
+                ng-disabled="!actions.isInEditionMode() || mfReadonly"
+                bo-attr
+                bo-id="{{ mfId }}"
+                ng-options="item[mfField.valueAttribute] as getContent(item) | translate for item in mfField.itemsList">
+            </select>
+
+            <span class="help-block" ng-if="showError(form.select,'required')" translate="field.error.required"></span>
+        </div>
+    </ng-form>
+</div>

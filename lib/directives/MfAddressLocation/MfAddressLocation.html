@@ -1,0 +1,47 @@
+<div bindonce bo-class="getCssClassesContainer()" >
+    <ng-form name="form">
+        <mf-label
+                mf-required-field="{{mfRequired}}"
+                mf-text="{{mfLabel}}"
+                mf-associated-field="{{mfId}}"
+                mf-hide-label="{{mfHideLabel}}"
+                ng-if="mfLabel"
+                ></mf-label>
+
+        <div class="well"  bo-class="getCssClassesInputContainer()">
+            <div class="row">
+
+                <mf-doublefield
+                        mf-field="mfField.latitude"
+                        mf-label="{{'field.mfaddresslocation.lat.label' | translate}}"
+                        mf-placeholder = "{{mfLatitudePlaceholder}}"
+                        mf-required= "mfRequired"
+                        mf-readonly="mfReadonly"
+                        mf-css-class-container= "mfCssClassContainer"
+                        ></mf-doublefield>
+            </div>
+            <div class="row">
+                <mf-doublefield
+                        mf-field="mfField.longitude"
+                        mf-label="{{ 'field.mfaddresslocation.lng.label' | translate}}"
+                        mf-placeholder = "{{mfLongitudePlaceholder}}"
+                        mf-required= "mfRequired"
+                        mf-readonly="mfReadonly"
+                        mf-css-class-container= "mfCssClassContainer"
+                        ></mf-doublefield>
+            </div>
+            <div class="row">
+                <div class="col-xs-3"/>
+                <div class="col-xs-3">
+                    <button ng-click="getCurrentPosition()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-screenshot btn btn-default"></button>
+                </div>
+                <div class="col-xs-3">
+                    <a href="{{positionURL}}" class="glyphicon glyphicon-map-marker btn btn-default" target="_blank" title="{{mfLabel}}" ng-disabled="positionURL === '#'"></a>
+                </div>
+                <div class="col-xs-3" >
+                    <button ng-click="clearFields()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-remove-sign btn btn-default"></button>
+                </div>
+            </div>
+        </div>
+    </ng-form>
+</div>

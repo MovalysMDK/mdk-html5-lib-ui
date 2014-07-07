@@ -1,0 +1,33 @@
+<div bindonce bo-class="getCssClassesContainer()" >
+    <ng-form name="form">
+        <mf-label
+                mf-text="{{mfLabel}}"
+                mf-associated-field="{{mfId}}"
+                mf-hide-label="{{mfHideLabel}}"
+                ng-if="mfLabel"
+                ></mf-label>
+
+        <div bo-class="getCssClassesInputContainer()">
+                <input  type="checkbox"
+                        ng-model="positionRequested"
+                        class="inputCheckBox"
+                        name="input"
+                        bindonce
+                        bo-id="mfId"
+                        ng-change="onCheckboxChange()"
+                        ng-show="actions.isInEditionMode() && !mfReadOnly"
+                />
+
+                <a href="{{positionURL}}"
+                   class="glyphicon glyphicon-map-marker btn" target="_blank"
+                   ng-class="getMapCss()"
+                   ng-disabled="positionURL === '#'"></a>
+
+                <!--<span class="glyphicon glyphicon-ok text-success"-->
+                      <!--ng-show="actions.isInEditionMode() && !mfReadOnly  && positionURL !== '#'">-->
+                <!--</span>-->
+
+            </label>
+        </div>
+    </ng-form>
+</div>

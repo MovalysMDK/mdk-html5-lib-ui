@@ -1,0 +1,32 @@
+<div class="subcontrolbar">
+    <header class="panel-heading" bindonce bo-hide="!viewConfig.hideSubControlBar">
+        <h3 class="panel-title"><span bindonce="subcontrolbar.title" bo-text="subcontrolbar.title"></span></h3>
+    </header>
+
+    <nav class="navbar panel-heading navbar-inverse" role="navigation" bindonce bo-hide="viewConfig.hideSubControlBar" >
+
+        <div class="navbar-header">
+
+            <div class="title-app">
+                <span bindonce="subcontrolbar.title" bo-text="subcontrolbar.title"></span>
+            </div>
+
+            <div class="pull-right">
+                <ul class="list-inline">
+                    <!-- button save -->
+                    <li ng-if="subcontrolbar.buttonSave()"><a href="" ng-click="subcontrolbar.goSave()" class="navbar-btn"><span class="glyphicon glyphicon-floppy-disk"></span></a></li>
+                    <!-- button edit -->
+                    <li ng-if="subcontrolbar.buttonEdit()"><a href="" ng-click="subcontrolbar.goEdit()" class="navbar-btn"><span class="glyphicon glyphicon-pencil"></span></a></li>
+                    <!-- button cancel -->
+                    <li ng-if="subcontrolbar.buttonCancel()"><a href="" ng-click="subcontrolbar.goCancel()" class="navbar-btn"><span class="glyphicon glyphicon-remove"></span></a></li>
+                    <!-- button add -->
+                    <li ng-if="subcontrolbar.buttonAdd()"><a href="" ng-click="subcontrolbar.goAdd()" class="navbar-btn"><span class="glyphicon glyphicon-plus"></span></a></li>
+                    <!-- button remove -->
+                    <li ng-if="subcontrolbar.buttonRemove()"><a href="" ng-click="subcontrolbar.goRemove()" class="navbar-btn"><span class="glyphicon glyphicon-trash"></span></a></li>
+                </ul>
+            </div>
+
+        </div><!-- /.navbar-header -->
+
+    </nav>
+</div>
