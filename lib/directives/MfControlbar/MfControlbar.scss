@@ -5,7 +5,7 @@
 .navbar-inverse {
     background-color: $navbar-inverse-bg;
     color: $navbar-inverse-text;
-    height: 55px;
+    height: $controlbar-height;
 }
 
 .button-snap-opened {
@@ -31,7 +31,7 @@
 
     .title-app {
         float: left;
-        height: 55px;
+        height: $controlbar-height;
         font-size: 2rem;
 
         img {

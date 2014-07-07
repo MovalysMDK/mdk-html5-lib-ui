@@ -15,8 +15,6 @@ snap-drawers,
 .x-snap-drawers,
 .snap-drawers,
 .snap-content {
-
-    // margin-top: 55px;
 }
 
 snap-drawer,
@@ -40,7 +38,7 @@ snap-drawer,
 }
 
 .snapWithMargin{
-	margin-top: 55px;
+	margin-top: $controlbar-height;
 }
 
 .snapWithoutMargin{

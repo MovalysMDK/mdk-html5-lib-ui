@@ -48,6 +48,8 @@
     .#{$workspace-column-style-name} {
       width: workspace-column-width($workspace-columns-number);
       float: left;
+      padding-top: $controlbar-height;
+      margin-top: -$controlbar-height;
     }
 
     /*
