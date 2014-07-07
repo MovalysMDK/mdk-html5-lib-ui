@@ -1,0 +1,55 @@
+{
+    "common.password": "Mot de passe",
+    "common.username": "Nom d'utilisateur",
+    "common.yes": "Oui",
+    "common.no": "Non",
+    "common.cancel": "Annuler",
+    "common.ok": "Ok",
+
+    "modal.yes" : "Oui",
+    "modal.no" : "Non",
+    "modal.cancel": "Annuler",
+    "modal.ok": "Ok",
+
+    "field.error.required": "Le champs est obligatoire.",
+    "field.error.number": "[TODO fr translation] This field must be a number",
+    "field.error.integer": "[TODO fr translation] This field must be an integer",
+    "field.error.double": "[TODO fr translation] This field must be a double value",
+    "field.error.min": "[TODO fr translation] This field must be greater than {{mfMin}}",
+    "field.error.max": "[TODO fr translation] This field must be lesser than {{mfMax}}",
+    "field.error.url": "[TODO fr translation] This filed must be an url",
+    "field.error.email": "[TODO fr translation] This filed must be an email address",
+    "field.error.phone": "[TODO fr translation] This filed must be a phone number",
+    "field.error.date": "[TODO fr translation] This field must be a date",
+    "field.error.generic": "Le champs n'est pas valide.",
+
+    "field.mfaddresslocation.lat.label": "Latitude",
+    "field.mfaddresslocation.lng.label": "Longitude",
+    "field.mfaddresslocation.lat.placeholder": "Saisir une valeur.",
+    "field.mfaddresslocation.lng.placeholder": "Saisir une valeur.",
+
+    "field.mfsendmailtextfield.placeholder": "abc@def.gh",
+    "field.mfcallphonenumber.placeholder": "01 23 45 67 89",
+    "field.mfbrowseurltextfield.placeholder": "http:// https:// ftp://",
+
+    "field.mfphoto.name.label":"Name",
+    "field.mfphoto.date.label":"Date",
+    "field.mfphoto.state.label":"State",
+    "field.mfphoto.desc.label":"Desc",
+    "field.mfphoto.location.label":"Location",
+
+    "slidingmenu.database.import.label": "Importer",
+    "slidingmenu.database.export.label": "Exporter",
+    "slidingmenu.database.reset.label": "Réinitialiser",
+    "slidingmenu.settings.label": "Paramètres",
+
+    "config.number-of-columns-workspace": "Nombre de colonnes (workspace)",
+    "config.server-url": "Url du serveur",
+
+    "enum__MFPhotoState__FWK_NONE": "NA",
+    "enum__MFPhotoState__SELECTED": "Selectionnée",
+    "enum__MFPhotoState__DOWNLOADED": "Téléchargée",
+    "enum__MFPhotoState__TAKEN": "Prise",
+    "enum__MFPhotoState__TODOWNLOAD": "A télécharger"
+
+}

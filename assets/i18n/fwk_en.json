@@ -1,0 +1,78 @@
+{
+    "common.password": "Password",
+    "common.username": "Username",
+    "common.yes": "Yes",
+    "common.no": "No",
+    "common.cancel": "Cancel",
+    "common.ok": "OK",
+
+    "modal.yes" : "Yes",
+    "modal.no" : "No",
+    "modal.cancel": "Cancel",
+    "modal.ok": "Ok",
+
+    "modal.unsaveddata.header" : "Forgotten backup",
+    "modal.unsaveddata.message" : "Save modifications?",
+
+    "modal.confirmdelete.header": "Remove2",
+    "modal.confirmdelete.message": "Are you sure to {{msgParam}} ?",
+
+    "modal.invaliddata.header": "Error(s)",
+    "modal.invaliddata.message": "Invalid data",
+
+    "field.error.required": "This field is required",
+    "field.error.number": "This field must be a number",
+    "field.error.integer": "This field must be an integer",
+    "field.error.double": "This field must be a double value",
+    "field.error.min": "This field must be greater than {{value}}",
+    "field.error.max": "This field must be lesser than {{value}}",
+    "field.error.url": "This filed must be an url",
+    "field.error.email": "This filed must be an email address",
+    "field.error.phone": "This filed must be a phone number",
+    "field.error.date": "This field must be a date",
+    "field.error.generic": "This field has some errors",
+
+    "field.mfaddresslocation.lat.label": "Latitude",
+    "field.mfaddresslocation.lng.label": "Longitude",
+    "field.mfaddresslocation.lat.placeholder": "Please enter a value.",
+    "field.mfaddresslocation.lng.placeholder": "Please enter a value.",
+
+    "field.mfsendmailtextfield.placeholder": "abc@def.gh",
+    "field.mfcallphonenumber.placeholder": "01 23 45 67 89",
+    "field.mfbrowseurltextfield.placeholder": "http:// https:// ftp://",
+
+    "field.mfphoto.name.label":"Name",
+    "field.mfphoto.date.label":"Date",
+    "field.mfphoto.state.label":"State",
+    "field.mfphoto.desc.label":"Desc",
+    "field.mfphoto.location.label":"Location",
+
+
+    "form.invalid" : "Form not valid",
+
+    "action.save.success": "Save success",
+    "action.save.failure": "Save failed",
+    "action.delete.success": "Delete success",
+    "action.delete.failure": "Delete failed",
+
+    "database.reset.success": "The database has been reduced",
+    "database.reset.failure": "Error on reset database: {{error}}",
+    "database.export.success": "The database has been exported",
+    "database.export.failure": "Error on export database: {{error}}",
+    "database.import.success": "The database has been imported",
+    "database.import.failure": "Error on import database: {{error}}",
+
+    "slidingmenu.database.import.label": "Import",
+    "slidingmenu.database.export.label": "Export",
+    "slidingmenu.database.reset.label": "Reset",
+    "slidingmenu.settings.label": "Settings",
+
+    "config.number-of-columns-workspace": "Number of columns (workspace)",
+    "config.server-url": "Server Url",
+
+    "enum__MFPhotoState__FWK_NONE": "None",
+    "enum__MFPhotoState__SELECTED": "Selected",
+    "enum__MFPhotoState__DOWNLOADED": "Downloaded",
+    "enum__MFPhotoState__TAKEN": "Taken",
+    "enum__MFPhotoState__TODOWNLOAD": "To download"
+}

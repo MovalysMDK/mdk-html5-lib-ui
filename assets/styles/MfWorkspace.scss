@@ -1,0 +1,60 @@
+@function workspace-container-width($columns-number, $displayed-columns) {
+  @return ( $columns-number / $displayed-columns ) * 100%;
+}
+@function workspace-column-width($columns-number) {
+  @return ( 1 / $columns-number ) * 100%;
+}
+
+@mixin workspace-container-compute($container-style-name, $columns-number, $displayed-columns) {
+
+  // for each screen width define a media query
+  @each $default-displayed-column-number, $media-query  in $workspace-width-media-query-size {
+
+    @media #{$media-query} {
+      @if $displayed-columns == -1 {
+        $default-displayed-columns: $default-displayed-column-number !default;
+        @if $default-displayed-columns > $columns-number {
+          $default-displayed-columns: $columns-number;
+        }
+        .#{$container-style-name} {
+          width: workspace-container-width($columns-number, $default-displayed-columns);
+        }
+      } @else {
+        .#{$container-style-name} {
+          width: workspace-container-width($columns-number, $displayed-columns);
+        }
+      }
+    }
+
+  }
+
+}
+
+@if $application-workspace-styles != null {
+  @each $wks, $values in $application-workspace-styles {
+
+    $workspace-columns-number: 2 !default;
+    @if map-has-key($values, workspace-columns-number) {
+      $workspace-columns-number: map-get($values, workspace-columns-number);
+    }
+    $workspace-displayed-columns: -1 !default;
+    @if map-has-key($values, workspace-displayed-columns) {
+      $workspace-displayed-columns: map-get($values, workspace-displayed-columns);
+    }
+
+    $workspace-column-style-name: #{$wks}-workspace-column;
+    $workspace-container-style-name: #{$wks}-workspace-container;
+
+    .#{$workspace-column-style-name} {
+      width: workspace-column-width($workspace-columns-number);
+      float: left;
+    }
+
+    /*
+    .#{$workspace-container-style-name} {
+    }
+    */
+    @include workspace-container-compute($workspace-container-style-name, $workspace-columns-number, $workspace-displayed-columns);
+
+  }
+}

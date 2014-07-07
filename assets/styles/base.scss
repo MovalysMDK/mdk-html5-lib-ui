@@ -1,0 +1,46 @@
+body {
+  padding-top: 55px;
+  font-weight: lighter;
+  font-style: verdana;
+  color: #545454;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: $container-bg;
+}
+
+
+.menu > ul {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.menu > ul > li {
+
+
+  list-style-type: none;
+  display: block;
+  height: 35px;
+  border-bottom: 1px solid #545454;
+  padding-left: 20px;
+  text-align:center;
+}
+
+.menu li:hover {
+
+  color: #FFFFFF;
+  background-color: #545454;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
