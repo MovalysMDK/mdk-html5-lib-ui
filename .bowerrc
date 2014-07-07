@@ -1,8 +1,8 @@
 {
     "directory": "vendor",
     "registry": {
-        "search": ["http://172.22.182.55:8000/","https://bower.herokuapp.com/"],
-        "register": "http://172.22.182.55:8000/"
+        "search": ["http://nansrvintc2.adeuza.fr:8000/packages","https://bower.herokuapp.com/"],
+        "register": "http://nansrvintc2.adeuza.fr:8000/packages"
     }
 }
 
