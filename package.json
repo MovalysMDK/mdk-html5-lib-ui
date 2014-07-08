@@ -5,8 +5,7 @@
   "codename": "Cotopaxi",
   "homepage": "http://git.adeuza.fr/mdk-html5-ui",
   "description": "MDK HTML5 UI Framework",
-  "main": [
-  ],
+  "main": [],
   "repository": {
     "type": "svn",
     "url": "http://svndav.adeuza.fr/Movalys/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
