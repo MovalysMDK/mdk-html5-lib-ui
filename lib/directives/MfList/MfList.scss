@@ -64,6 +64,7 @@ ul.mflist-1D li .mflist-item-body {
 
 .mflist-2D .mflist-sublist{
   @extend .list-group;
+  margin-bottom: 0px;
 
 }
 .mflist-2D .mflist-sublist li{

@@ -56,6 +56,7 @@
     "lib/directives/MfFormat.js",
     "lib/directives/MfIntegerfield/MfIntegerfield.js",
     "lib/directives/MfLabel/MfLabel.js",
+    "lib/directives/MfList/AccordionGroup.js",
     "lib/directives/MfList/MFList.js",
     "lib/directives/MfList/MfListItemForm.js",
     "lib/directives/MfList/MfPerfScroll.js",
