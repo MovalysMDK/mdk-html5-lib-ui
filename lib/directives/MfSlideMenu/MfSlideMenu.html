@@ -1,12 +1,12 @@
 <div>
 
-    <snap-drawer>
-        <div id="slide_menu" mf-multi-transclude="mf-snap-menu" ng-class="getCssWithControlbar()">
+    <snap-drawer ng-class="getCssWithControlbar()">
+        <div id="slide_menu" mf-multi-transclude="mf-snap-menu" >
         </div>
     </snap-drawer>
 
-    <snap-content  snap-options="opts" id="snap-content" mf-infinite-scroll>
-        <div mf-multi-transclude="mf-snap-body" ng-class="getCssWithControlbar()" class="container" >  <!-- scrollable snap-dragger -->
+    <snap-content  snap-options="opts" id="snap-content" mf-infinite-scroll ng-class="getCssWithControlbar()" >
+        <div mf-multi-transclude="mf-snap-body" class="container" >  <!-- scrollable snap-dragger -->
         </div>
     </snap-content>
 
