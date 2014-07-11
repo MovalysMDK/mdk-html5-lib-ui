@@ -23,8 +23,8 @@
                 min="{{mfMin}}"
                 max="{{mfMax}}"
                 ng-pattern="{{mfPattern}}"
-                ng-click="getFocus()"
             />
+            <!--ng-click="getFocus()"-->
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
             <span class="help-block" ng-if="showError(form.input,'number')" translate="field.error.number"></span>
             <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.double"></span>
