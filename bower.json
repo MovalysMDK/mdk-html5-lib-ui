@@ -41,6 +41,7 @@
     "lib/controllers/scopebuilders/MFWorkspaceScopeBuilder.js",
     "lib/dataloaders/MFAbstractDataLoader.js",
     "lib/directives/MFDirectivesHelper.js",
+    "lib/directives/MFStopEvent.js",
     "lib/directives/MfAddressLocation/MfAddressLocation.js",
     "lib/directives/MfAddressLocation/MfLocationHelper.js",
     "lib/directives/MfCheckbox/MfCheckbox.js",
