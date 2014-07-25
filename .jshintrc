@@ -3,15 +3,12 @@
     "camelcase":false,
     "curly": true,
     "eqeqeq": true,
-    "es3":false,
     "forin":true,
-    "freeze":false,
-    "immed":true,
+    "immed":false,
     "latedef": true,
     "newcap": true,
     "noarg": true,
     "noempty":true,
-    "nonbsp":true,
     "nonew":true,
     "quotmark": "single",
     "undef": true,
@@ -30,9 +27,11 @@
         "DataAccess":false,
         "Windows": false,
         "FastClick": false,
-        "SQLite3JS": false
+        "SQLite3JS": false,
+        "module": false
     },
     "browser": true,
     "devel":true,
-    "phantom":true
+    "phantom":true,
+    "node":true
 }
