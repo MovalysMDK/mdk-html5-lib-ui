@@ -1,27 +1,38 @@
 {
-  "node": true,
-  "browser": true,
-  "esnext": true,
-  "bitwise": true,
-  "curly": true,
-  "eqeqeq": true,
-  "latedef": true,
-  "newcap": true,
-  "noarg": true,
-  "quotmark": "single",
-  "regexp": true,
-  "undef": true,
-  "strict": true,
-  "trailing": true,
-  "smarttabs": true,
-  "globals": {
-    "LocalFileSystem": false,
-    "angular": false,
-    "printStackTrace": false,
-    "Dao_User": false,
-    "DataAccess":false,
-    "Windows": false,
-    "FastClick": false,
-    "SQLite3JS": false
-  }
+    "bitwise": true,
+    "camelcase":false,
+    "curly": true,
+    "eqeqeq": true,
+    "es3":false,
+    "forin":true,
+    "freeze":false,
+    "immed":true,
+    "latedef": true,
+    "newcap": true,
+    "noarg": true,
+    "noempty":true,
+    "nonbsp":true,
+    "nonew":true,
+    "quotmark": "single",
+    "undef": true,
+    "unused":"vars",
+    "strict": true,
+
+
+    "eqnull":true,
+    "esnext": true,
+
+
+    "globals": {
+        "LocalFileSystem": false,
+        "angular": false,
+        "printStackTrace": false,
+        "DataAccess":false,
+        "Windows": false,
+        "FastClick": false,
+        "SQLite3JS": false
+    },
+    "browser": true,
+    "devel":true,
+    "phantom":true
 }

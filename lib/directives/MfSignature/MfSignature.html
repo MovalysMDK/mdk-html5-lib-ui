@@ -17,7 +17,7 @@
                     ng-mousemove="onmousemove($event)"
                    >
             </canvas>
-            <span class="glyphicon glyphicon-trash" ng-click="clear()" ng-disabled="!actions.isInEditionMode() || mfReadonly"/>
+            <span class="glyphicon glyphicon-trash" ng-click="clear()" ng-disabled="!actions.isInEditionMode() || mfReadonly"></span>
             <span class="help-block" ng-if="showError(form,'required')" translate="field.error.required"></span>
         </div>
     </ng-form>
