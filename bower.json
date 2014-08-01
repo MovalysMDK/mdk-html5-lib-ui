@@ -29,7 +29,7 @@
     "lib/mfuiModule.js",
     "lib/actions/MFUpdateVMWithDataLoaderAction.js",
     "lib/controllers/MFControllerLauncher.js",
-    "lib/controllers/RootScopeCtrl.js",
+    "lib/controllers/MFRootScopeCtrl.js",
     "lib/controllers/config/MFControllerConfig.js",
     "lib/controllers/scopebuilders/MFDataViewScopeBuilder.js",
     "lib/controllers/scopebuilders/MFFormScopeBuilder.js",
