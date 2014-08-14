@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     sass: {
       main: {
       		options: {
-      			loadPath: ['vendor/bootstrap-sass-official/vendor/assets/stylesheets','../bootstrap-sass-official/vendor/assets/stylesheets']
+      			loadPath: ['vendor/bootstrap-sass-official/assets/stylesheets','../bootstrap-sass-official/assets/stylesheets']
       		},
 		    files: {
 			   'build/framework.css': 'assets/styles/framework.scss',

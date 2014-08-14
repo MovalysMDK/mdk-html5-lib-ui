@@ -31,7 +31,8 @@
         "Windows": false,
         "FastClick": false,
         "SQLite3JS": false,
-        "module" :false
+        "module" :false,
+        "Modernizr":false
     },
     "browser": true,
     "devel":true,
