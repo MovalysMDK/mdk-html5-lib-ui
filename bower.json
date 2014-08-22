@@ -99,10 +99,5 @@
     "lib/viewmodels/componentsVM/factories/MFPhotoVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFValueImageVMFactory.js"
-  ],
-  "overrides": {
-    "ngCordova": {
-      "main": "dist/ng-cordova.min.js"
-    }
-  }
+  ]
 }
