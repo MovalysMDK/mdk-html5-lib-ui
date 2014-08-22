@@ -2,22 +2,20 @@
     <ng-form name="form">
         <div class="col-sm-offset-2 col-sm-10">
             <div class="checkbox">
-                <label
-                    id="{{mfLabelId}}"
-                    for="{{mfId}}">
-                    <input
-                        type="checkbox"
-                        class="inputCheckBox"
-                        ng-model="mfField"
-                        ng-readonly="mfReadonly"
-                        ng-required="mfRequired"
-                        ng-disabled="!actions.isInEditionMode()"
-                        bo-id="mfId"
-                        name="input"
-                    />
+                <input
+                    type="checkbox"
+                    class="inputCheckBox"
+                    ng-model="mfField"
+                    ng-readonly="mfReadonly"
+                    ng-required="mfRequired"
+                    ng-disabled="!actions.isInEditionMode()"
+                    bo-id="mfId"
+                    name="input"
+                />
+                 <label id="{{mfLabelId}}" for="{{mfId}}">
                     <div ng-if="!hideLabel()"><span>{{mfLabel | translate}}</span><span ng-if="requiredField()"> *</span></div>
-                    <span class="help-block margin-top-0" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
                 </label>
+                <span class="help-block margin-top-0" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
             </div>
         </div>
     </ng-form>
