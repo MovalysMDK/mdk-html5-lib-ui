@@ -1,7 +1,7 @@
 {
     "directory": "vendor",
     "registry": {
-        "search": ["http://nansrvintc2.adeuza.fr:8000","https://bower.herokuapp.com/"]
+        "search": ["https://bower.herokuapp.com/"]
     }
 }
 

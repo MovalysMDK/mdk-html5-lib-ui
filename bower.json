@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "repository": {
     "type": "svn",
-    "url": "svn+http://svndav.adeuza.fr/Movalys/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
+    "url": "svn+http://svn.ntes.fr.sopra/svnpolemobility/svn/Movalys/repository/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
   },
   "description": "MDK HTML 5 UI Framework",
   "json": "bower.json",
@@ -18,7 +18,7 @@
     "angular-snap": "=1.5.4",
     "angular-bindonce": "=0.3.1",
     "angular-growl-v2": "=0.7.0",
-    "bootstrap-sass-official": "=3.2.0",
+    "bootstrap-sass-official": "~3.3.4",
     "normalize-css": "=3.0.1",
     "snapjs": "=1.9.3"
   },

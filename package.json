@@ -3,12 +3,12 @@
   "private": false,
   "version": "1.0.1",
   "codename": "Cotopaxi",
-  "homepage": "http://git.adeuza.fr/mdk-html5-ui",
+  "homepage": "http://git.ntes.fr.sopra/mdk-html5-ui",
   "description": "MDK HTML5 UI Framework",
   "main": [],
   "repository": {
     "type": "svn",
-    "url": "http://svndav.adeuza.fr/Movalys/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
+    "url": "http://svn.ntes.fr.sopra/svnpolemobility/svn/Movalys/repository/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
   },
   "keywords": [
     "mdk",
