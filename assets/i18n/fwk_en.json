@@ -50,6 +50,7 @@
 
     "form.invalid" : "Form not valid",
 
+    "action.save.successfirsttime": "Login/Mdp approved",
     "action.save.success": "Save success",
     "action.save.failure": "Save failed",
     "action.delete.success": "Delete success",

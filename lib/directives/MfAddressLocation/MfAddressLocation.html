@@ -1,4 +1,4 @@
-<div bindonce bo-class="getCssClassesContainer()" >
+<div bindonce class="address-location-style" bo-class="getCssClassesContainer()" >
     <ng-form name="form">
         <mf-label
                 mf-required-field="{{mfRequired}}"
@@ -9,7 +9,7 @@
                 ></mf-label>
 
         <div class="well"  bo-class="getCssClassesInputContainer()">
-            <div class="row">
+            <div class="latitude-style">
 
                 <mf-doublefield
                         mf-field="mfField.latitude"
@@ -20,7 +20,7 @@
                         mf-css-class-container= "mfCssClassContainer"
                         ></mf-doublefield>
             </div>
-            <div class="row">
+            <div class="longitude-style">
                 <mf-doublefield
                         mf-field="mfField.longitude"
                         mf-label="{{ 'field.mfaddresslocation.lng.label' | translate}}"
@@ -30,15 +30,15 @@
                         mf-css-class-container= "mfCssClassContainer"
                         ></mf-doublefield>
             </div>
-            <div class="row">
-                <div class="col-xs-3"></div>
-                <div class="col-xs-3">
+            <div class="button-style">
+                <div class="empty-style"></div>
+                <div class="position-getter-style">
                     <button ng-click="getCurrentPosition()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-screenshot btn btn-default"></button>
                 </div>
-                <div class="col-xs-3">
+                <div class="map-style">
                     <a href="{{positionURL}}" class="glyphicon glyphicon-map-marker btn btn-default" target="_blank" title="{{mfLabel}}" ng-disabled="positionURL === '#'"></a>
                 </div>
-                <div class="col-xs-3" >
+                <div class="clear-style" >
                     <button ng-click="clearFields()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-remove-sign btn btn-default"></button>
                 </div>
             </div>

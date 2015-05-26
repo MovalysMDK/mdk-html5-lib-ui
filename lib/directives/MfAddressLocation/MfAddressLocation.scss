@@ -1,0 +1,28 @@
+
+.latitude-style{
+ @include make-row();
+}
+
+.longitude-style{
+  @include make-row();
+}
+
+.button-style{
+  @include make-row();
+}
+
+.empty-style{
+  @include  make-xs-column(3);
+}
+
+.position-getter-style{
+  @include  make-xs-column(3);
+}
+
+.map-style{
+  @include  make-xs-column(3);
+}
+
+.clear-style{@include  make-xs-column(3);
+
+}
