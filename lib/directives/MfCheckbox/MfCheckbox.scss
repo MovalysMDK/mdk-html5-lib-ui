@@ -1,3 +1,8 @@
+.checkbox{
+  @include make-sm-column-offset(2);
+  @include make-sm-column(10);
+}
+
 input[type="checkbox"].inputCheckBox {
 	-webkit-appearance: checkbox;
     margin-left: 0px;

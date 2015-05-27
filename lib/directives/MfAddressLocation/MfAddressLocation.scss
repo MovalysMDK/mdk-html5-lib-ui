@@ -9,10 +9,7 @@
 
 .button-style{
   @include make-row();
-}
-
-.empty-style{
-  @include  make-xs-column(3);
+  @include make-xs-column-offset(3)
 }
 
 .position-getter-style{
