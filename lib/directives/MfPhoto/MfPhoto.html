@@ -10,7 +10,7 @@
 
         <div bo-class="getCssClassesInputContainer()" class="media" id="{{mfId}}">
             <div class="pull-left">
-                <img ng-src="{{mfField.uri}}" alt="no-photo" class="media-object img-thumbnail" style="max-width:250px; " />
+                <img ng-src="{{mfField.uri}}" width="{{mfThumbnailWidth}}" height="{{mfThumbnailHeight}}" alt="no-photo" class="media-object img-thumbnail" style="max-width:250px; " />
                 <input mf-photo-input-update type="file" accept="image/*" capture="camera" name="input" class="photo-input" id="{{mfIdInput}}" style="display: none;"/>
             </div>
             <div class="media-body">
