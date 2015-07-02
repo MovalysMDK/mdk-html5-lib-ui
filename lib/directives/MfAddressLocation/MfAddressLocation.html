@@ -32,13 +32,16 @@
             </div>
             <div class="button-style">
                 <div class="position-getter-style">
-                    <button ng-click="getCurrentPosition()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-screenshot btn btn-default"></button>
+                    <button ng-click="getCurrentPosition()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="btn btn-default"><img src="assets/pictures/glyphicons-186-screenshot.png"/></button>
+                    <!--<button ng-click="getCurrentPosition()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-screenshot btn btn-default"></button>-->
                 </div>
                 <div class="map-style">
-                    <a href="{{positionURL}}" class="glyphicon glyphicon-map-marker btn btn-default" target="_blank" title="{{mfLabel}}" ng-disabled="positionURL === '#'"></a>
+                    <a href="{{positionURL}}" class="btn btn-default" target="_blank" title="{{mfLabel}}" ng-disabled="positionURL === '#'"><img src="assets/pictures/glyphicons-243-google-maps.png"/></a>
+                    <!--<a href="{{positionURL}}" class="glyphicon glyphicon-map-marker btn btn-default" target="_blank" title="{{mfLabel}}" ng-disabled="positionURL === '#'"></a>-->
                 </div>
                 <div class="clear-style" >
-                    <button ng-click="clearFields()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-remove-sign btn btn-default"></button>
+                    <button ng-click="clearFields()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="btn btn-default"><img src="assets/pictures/glyphicons-193-circle-remove.png"/></button>
+                    <!--<button ng-click="clearFields()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="glyphicon glyphicon-remove-sign btn btn-default"></button>-->
                 </div>
             </div>
         </div>
