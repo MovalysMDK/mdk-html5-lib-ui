@@ -5,8 +5,8 @@
             <ul class="list-inline">
                 <li ng-if="controlbar.buttonSlidingMenu()" snap-toggle="left" ng-class="controlbar.getCssSnap()">
                 </li>
-                <li ng-if="controlbar.buttonBack()">
-                    <a href="" ng-click="controlbar.goBack()"><img src="assets/pictures/glyphicons-225-chevron-left.png"/><</a>
+                <li ng-if="controlbar.buttonBack()" href="" ng-click="controlbar.goBack()">
+                    <img src="assets/pictures/glyphicons-225-chevron-left.png" ng-click="controlbar.goBack()"/>
                 </li>
                 <li bindonce bo-show="controlbar.buttonHome()">
                     <a href="" ng-click="controlbar.goHome()" snap-close><img src="assets/pictures/ab_logo.png"/></a>
