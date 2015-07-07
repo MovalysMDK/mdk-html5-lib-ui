@@ -18,10 +18,10 @@
                         ng-show="actions.isInEditionMode() && !mfReadOnly"
                 />
 
-                <a href="{{positionURL}}"
-                   class="glyphicon glyphicon-map-marker btn" target="_blank"
-                   ng-class="getMapCss()"
-                   ng-disabled="positionURL === '#'"></a>
+                <a href="{{positionURL}}" target="_blank"
+                   ng-class="getMapCss()" ng-disabled="positionURL === '#'">
+                    <img src="assets/pictures/glyphicons-243-google-maps.png"/>
+                </a>
 
                 <!--<span class="glyphicon glyphicon-ok text-success"-->
                       <!--ng-show="actions.isInEditionMode() && !mfReadOnly  && positionURL !== '#'">-->
