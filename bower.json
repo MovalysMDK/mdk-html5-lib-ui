@@ -1,6 +1,6 @@
 {
   "name": "mdk-html5-ui",
-  "version": "1.1.0-BETA2",
+  "version": "1.1.0",
   "repository": {
     "type": "svn",
     "url": "svn+http://svn.ntes.fr.sopra/svnpolemobility/svn/Movalys/repository/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
