@@ -8,25 +8,22 @@
   "description": "MDK HTML 5 UI Framework",
   "json": "bower.json",
   "dependencies": {
-    "angular-cookies": "=1.2.24",
-    "angular-sanitize": "=1.2.24",
-    "angular-route": "=1.2.24",
-    "angular-animate": "=1.2.24",
-    "angular-touch": "=1.2.24",
+    "angular-cookies": "=1.4.3",
+    "angular-sanitize": "=1.4.3",
+    "angular-route": "=1.4.3",
+    "angular-animate": "=1.4.3",
+    "angular-touch": "=1.4.3",
     "angular-ui-router": "=0.2.15",
-    "angular-bootstrap": "=0.11.0",
-    "angular-snap": "=1.5.4",
-    "angular-bindonce": "=0.3.1",
-    "angular-growl-v2": "=0.7.0",
-    "bootstrap-sass-official": "~3.3.4",
-    "normalize-css": "=3.0.1",
+    "angular-bootstrap": "=0.13.1",
+    "angular-snap": "=1.8.3",
+    "angular-bindonce": "=0.3.3",
+    "angular-growl-v2": "=0.7.5",
+    "bootstrap-sass-official": "=3.3.5",
+    "normalize-css": "=3.0.3",
     "snapjs": "=1.9.3"
   },
   "devDependencies": {},
   "private": true,
-  "resolutions": {
-    "angular": "1.2.24"
-  },
   "main": [
     "lib/mfuiModule.js",
     "lib/actions/MFUpdateVMWithDataLoaderAction.js",
@@ -102,5 +99,8 @@
     "lib/viewmodels/componentsVM/factories/MFPhotoVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFValueImageVMFactory.js"
-  ]
+  ],
+  "resolutions": {
+    "angular": "1.4.3"
+  }
 }
