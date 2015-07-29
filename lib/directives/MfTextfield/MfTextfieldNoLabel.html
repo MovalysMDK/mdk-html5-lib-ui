@@ -1,0 +1,21 @@
+<div bindonce class="textfield-style form-group form-without-label {{mfCssClassContainer}} " ng-class="getCssError(form.input)">
+        <ng-form name="form" >
+            <input
+                class="col-sm-offset-2 form-control"
+                type="{{mfType}}"
+                ng-model="mfField"
+                ng-readonly="mfReadonly"
+                ng-required="mfRequired"
+                ng-disabled="!actions.isInEditionMode()"
+                placeholder="{{mfPlaceholder | translate}}"
+                bo-id="mfId"
+                name="input"
+                mf-format="{{mfFormat}}"
+                mf-validation="{{mfValidation}}"
+                typeahead="{{mfTypehead}}"
+                typeahead-editable="{{mfTypeaheadEditable}}"
+            />
+            <!--ng-click="getFocus()"-->
+            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+    </ng-form>
+</div>

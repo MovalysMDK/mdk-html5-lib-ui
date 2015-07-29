@@ -1,0 +1,27 @@
+<div bindonce class="integer-style form-group form-without-label {{mfCssClassContainer}}" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <div class="integer-input col-sm-offset-2">
+            <input
+                type="number"
+                class="form-control"
+                ng-model="mfField"
+                ng-readonly="mfReadonly"
+                ng-required="mfRequired"
+                ng-disabled="!actions.isInEditionMode()"
+                placeholder="{{mfPlaceholder}}"
+                bo-attr
+                bo-id="mfId"
+                name="input"
+                min="{{mfMin}}"
+                max="{{mfMax}}"
+                ng-pattern="{{mfPattern}}"
+            />
+            <!--ng-click="getFocus()"-->
+            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+            <span class="help-block" ng-if="showError(form.input,'number')" translate="field.error.number"></span>
+            <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.integer"></span>
+            <span class="help-block" ng-if="showError(form.input,'min')" translate="field.error.min" translate-values="{ value: '{{mfMin}}'}"></span>
+            <span class="help-block" ng-if="showError(form.input,'max')" translate="field.error.max" translate-values="{ value: '{{mfMax}}'}"></span>
+        </div>
+    </ng-form>
+</div>

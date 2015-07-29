@@ -1,3 +1,7 @@
+.span-input{
+  @include  make-sm-column(10);
+}
+
 .span-value-field{
   @include  make-sm-column(1);
 }

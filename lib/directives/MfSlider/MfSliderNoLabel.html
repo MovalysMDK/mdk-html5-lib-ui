@@ -1,0 +1,15 @@
+<div bindonce class="slide-style form-group form-without-label {{mfCssClassContainer}} col-sm-offset-2" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <span class="span-input" bo-class="getCssClassesInputContainer()" data-snap-ignore="true">
+                <input style="width:80%; display: inline;" type="range" min='{{mfMinValue}}' max='{{mfMaxValue}}' step='{{mfStepValue}}'
+                       ng-model="mfField"
+                       ng-readonly="mfReadonly"
+                       ng-required="mfRequired"
+                       ng-disabled="!actions.isInEditionMode()">
+        </span>
+        <span class="span-value-field">
+            <h4  ng-show="showValue" style="float:right; margin-top:2pt; width: 18%">{{mfField}}</h4>
+        </span>
+
+    </ng-form>
+</div>

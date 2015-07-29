@@ -1,0 +1,30 @@
+<div bindonce classe="email-style form-group form-without-label {{mfCssClassContainer}} col-sm-offset-2" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <div class="email-input">
+            <div class="input-group">
+                <input
+                    type="email"
+                    class="form-control"
+                    ng-model="mfField"
+                    ng-readonly="mfReadonly"
+                    ng-required="mfRequired"
+                    ng-disabled="!actions.isInEditionMode()"
+                    ng-pattern="{{mfPattern}}"
+                    placeholder="{{mfPlaceholder}}"
+                    bo-attr
+                    bo-id="mfId"
+                    name="input"
+                />
+                <!--ng-click="getFocus()"-->
+                <span class="input-group-btn">
+                    <a href="mailto:{{ mfField }}" class="btn btn-default" ng-disabled="isEmpty() || showError(form.input,'pattern')">
+                        <img src="assets/pictures/glyphicons-11-envelope.png"/>
+                    </a>
+                </span>
+            </div>
+            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+            <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.email"></span>
+        </div>
+    </ng-form>
+</div>
+

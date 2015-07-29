@@ -1,3 +1,7 @@
+.phone-input{
+  @include  make-sm-column(10);
+}
+
 div.input-group input[type=tel] {
   line-height: 20px;
 }

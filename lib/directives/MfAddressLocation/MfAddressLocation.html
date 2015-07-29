@@ -1,4 +1,4 @@
-<div bindonce class="address-location-style" bo-class="getCssClassesContainer()" >
+<div bindonce class="address-location-style form-group {{mfCssClassContainer}}" >
     <ng-form name="form">
         <mf-label
                 mf-required-field="{{mfRequired}}"
@@ -8,7 +8,7 @@
                 ng-if="mfLabel"
                 ></mf-label>
 
-        <div class="well"  bo-class="getCssClassesInputContainer()">
+        <div class="well address-input">
             <div class="latitude-style">
 
                 <mf-doublefield

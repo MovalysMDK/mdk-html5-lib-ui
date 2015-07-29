@@ -1,3 +1,7 @@
+.date-input{
+  @include  make-sm-column(10);
+}
+
 input[type=date] {
   background: 25px url('pictures/ic_btn_calendar.png') no-repeat right;
   margin-top: 0.3rem

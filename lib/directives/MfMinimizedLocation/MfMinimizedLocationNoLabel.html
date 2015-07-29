@@ -1,0 +1,24 @@
+<div bindonce class="minimized-location-style form-group form-without-label {{mfCssClassContainer}}" >
+    <ng-form name="form">
+        <div class="minimized-location-input col-sm-offset-2">
+                <input  type="checkbox"
+                        ng-model="positionRequested"
+                        class="inputCheckBox"
+                        name="input"
+                        bindonce
+                        bo-id="mfId"
+                        ng-change="onCheckboxChange()"
+                        ng-show="actions.isInEditionMode() && !mfReadOnly"
+                />
+
+                <a href="{{positionURL}}" target="_blank"
+                   ng-class="getMapCss()" ng-disabled="positionURL === '#'">
+                    <img src="assets/pictures/glyphicons-243-google-maps.png"/>
+                </a>
+
+                <!--<span class="glyphicon glyphicon-ok text-success"-->
+                      <!--ng-show="actions.isInEditionMode() && !mfReadOnly  && positionURL !== '#'">-->
+                <!--</span>-->
+        </div>
+    </ng-form>
+</div>

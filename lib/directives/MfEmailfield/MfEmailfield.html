@@ -1,4 +1,4 @@
-<div bindonce classe="email-style" bo-class="getCssClassesContainer()" ng-class="getCssError(form.input)">
+<div bindonce classe="email-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
     	<mf-label
             mf-required-field="{{mfRequired}}"
@@ -8,7 +8,7 @@
             ng-if="mfLabel"
         ></mf-label>
 
-        <div bo-class="getCssClassesInputContainer()">
+        <div class="email-input">
             <div class="input-group">
                 <input
                     type="email"

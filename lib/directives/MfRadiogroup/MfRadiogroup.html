@@ -1,4 +1,4 @@
-<div bindonce class="radio-group-style" bo-class="getCssClassesContainer()">
+<div bindonce class="radio-group-style form-group {{mfCssClassContainer}}">
 	<mf-label
         mf-required-field="{{mfRequired}}"
         mf-text="{{mfLabel}}"
@@ -7,31 +7,30 @@
         ng-if="mfLabel"
     ></mf-label>
 
-    <div bo-class="getCssClassesInputContainer()">
-         <!-- @see http://getbootstrap.com/css/#forms-controls -->
-         <div class="radio" ng-repeat="item in mfField.itemsList">
+     <!-- @see http://getbootstrap.com/css/#forms-controls -->
+     <div class="radio" ng-repeat="item in mfField.itemsList">
 
-            <!-- switch for checked -->
-            <label class="radioLbl">
-                <!-- Radio buttons doesn't support readonly attribute -->
-                <!-- @see http://stackoverflow.com/questions/1953017/why-cant-radio-buttons-be-readonly -->
+        <!-- switch for checked -->
+        <label class="radioLbl">
+            <!-- Radio buttons doesn't support readonly attribute -->
+            <!-- @see http://stackoverflow.com/questions/1953017/why-cant-radio-buttons-be-readonly -->
 
-                <input
-                        type="radio"
-                        value="{{ item[mfField.valueAttribute] }}"
-                        name="{{ mfId }}"
-                        ng-model="mfField.selectedItemValue"
-                        ng-required="mfRequired"
-                        ng-disabled="!actions.isInEditionMode() || mfReadonly"
-                        placeholder="{{mfPlaceholder}}"
-                        bo-id="{{ mfId +'_'+ item.id}}">
-
-
-                {{ getContent(item) | translate }}
-            </label>
-        </div>
+            <input
+                    type="radio"
+                    value="{{ item[mfField.valueAttribute] }}"
+                    name="{{ mfId }}"
+                    ng-model="mfField.selectedItemValue"
+                    ng-required="mfRequired"
+                    ng-disabled="!actions.isInEditionMode() || mfReadonly"
+                    placeholder="{{mfPlaceholder}}"
+                    bo-id="{{ mfId +'_'+ item.id}}">
 
 
-        <span class="help-block" ng-if="showError.required" translate="field.error.required"></span>
-	</div>
+            {{ getContent(item) | translate }}
+        </label>
+    </div>
+
+
+    <span class="help-block" ng-if="showError.required" translate="field.error.required"></span>
+
 </div>

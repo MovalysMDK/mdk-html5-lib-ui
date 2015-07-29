@@ -1,4 +1,4 @@
-<div bindonce class="textfield-style" bo-class="getCssClassesContainer()" ng-class="getCssError(form.input)">
+<div bindonce class="textfield-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form" >
         <mf-label
             mf-required-field="{{mfRequired}}"
@@ -8,7 +8,7 @@
             ng-if="mfLabel"
         ></mf-label>
 
-        <div bo-class="getCssClassesInputContainer()">
+        <div>
             <input
                 class="form-control"
                 type="{{mfType}}"

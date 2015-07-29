@@ -1,3 +1,7 @@
+.radio-input{
+  @include  make-sm-column(10);
+}
+
 input[type=radio] {
     width: 1.5rem;
     height: 1.5rem;

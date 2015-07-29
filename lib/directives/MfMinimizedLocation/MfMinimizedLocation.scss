@@ -1,3 +1,7 @@
+.minimized-location-input{
+  @include  make-sm-column(10);
+}
+
 .icon-success {
   color: #5CB85C;
 }

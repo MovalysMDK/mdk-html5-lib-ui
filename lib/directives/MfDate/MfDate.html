@@ -1,4 +1,4 @@
-<div bindonce class="date-style" bo-class="getCssClassesContainer()" ng-class="getCssError(form.input)">
+<div bindonce class="date-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <mf-label
                 mf-required-field="{{mfRequired}}"
@@ -8,7 +8,7 @@
                 ng-if="mfLabel"
                 ></mf-label>
 
-        <div bo-class="getCssClassesInputContainer()">
+        <div class="date-time">
             <input
                     mf-date-input
                     class="form-control"

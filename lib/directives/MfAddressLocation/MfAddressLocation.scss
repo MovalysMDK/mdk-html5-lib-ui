@@ -1,3 +1,6 @@
+.address-input{
+  @include  make-sm-column(10);
+}
 
 .latitude-style{
  @include make-row();

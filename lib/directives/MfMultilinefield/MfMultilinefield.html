@@ -1,4 +1,4 @@
-<div bindonce class="multiline-field-style" bo-class="getCssClassesContainer()" ng-class="getCssError(form.textarea)">
+<div bindonce class="multiline-field-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.textarea)">
     <ng-form name="form">
         <mf-label
                 mf-required-field="{{mfRequired}}"
@@ -8,7 +8,7 @@
                 ng-if="mfLabel"
                 ></mf-label>
 
-        <div bo-class="getCssClassesInputContainer()">
+        <div>
             <textarea
                 class="form-control"
                 ng-model="mfField"

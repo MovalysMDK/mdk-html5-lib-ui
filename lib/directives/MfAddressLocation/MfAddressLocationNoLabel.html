@@ -1,0 +1,38 @@
+<div bindonce class="address-location-style form-group form-without-label {{mfCssClassContainer}} col-sm-offset-2" >
+    <ng-form name="form">
+        <div class="well address-input">
+            <div class="latitude-style">
+
+                <mf-doublefield
+                        mf-field="mfField.latitude"
+                        mf-label="{{'field.mfaddresslocation.lat.label' | translate}}"
+                        mf-placeholder = "{{mfLatitudePlaceholder}}"
+                        mf-required= "mfRequired"
+                        mf-readonly="mfReadonly"
+                        mf-css-class-container= "mfCssClassContainer"
+                        ></mf-doublefield>
+            </div>
+            <div class="longitude-style">
+                <mf-doublefield
+                        mf-field="mfField.longitude"
+                        mf-label="{{ 'field.mfaddresslocation.lng.label' | translate}}"
+                        mf-placeholder = "{{mfLongitudePlaceholder}}"
+                        mf-required= "mfRequired"
+                        mf-readonly="mfReadonly"
+                        mf-css-class-container= "mfCssClassContainer"
+                        ></mf-doublefield>
+            </div>
+            <div class="button-style">
+                <div class="position-getter-style">
+                    <button ng-click="getCurrentPosition()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="btn btn-default"><img src="assets/pictures/glyphicons-186-screenshot.png"/></button>
+                </div>
+                <div class="map-style">
+                    <a href="{{positionURL}}" class="btn btn-default" target="_blank" title="{{mfLabel}}" ng-disabled="positionURL === '#'"><img src="assets/pictures/glyphicons-243-google-maps.png"/></a>
+                </div>
+                <div class="clear-style" >
+                    <button ng-click="clearFields()"  ng-disabled="mfReadonly || !actions.isInEditionMode()" class="btn btn-default"><img src="assets/pictures/glyphicons-193-circle-remove.png"/></button>
+                </div>
+            </div>
+        </div>
+    </ng-form>
+</div>

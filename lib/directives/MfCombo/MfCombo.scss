@@ -1,3 +1,6 @@
+.picker-input{
+  @include  make-sm-column(10);
+}
 
 .selectPicker{
   -webkit-appearance: menulist;

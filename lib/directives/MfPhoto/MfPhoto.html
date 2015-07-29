@@ -1,4 +1,4 @@
-<div bindonce class="photo-style" bo-class="getCssClassesContainer()"  ng-disabled="!actions.isInEditionMode() || mfReadonly" >
+<div bindonce class="photo-style form-group {{mfCssClassContainer}}" ng-disabled="!actions.isInEditionMode() || mfReadonly" >
     <ng-form name="form">
         <mf-label
             mf-required-field="{{mfRequired}}"
@@ -8,7 +8,7 @@
             ng-if="mfLabel"
         ></mf-label>
 
-        <div bo-class="getCssClassesInputContainer()" class="media" id="{{mfId}}">
+        <div class="media" id="{{mfId}}">
             <div class="pull-left">
                 <img ng-src="{{mfField.uri}}" width="{{mfThumbnailWidth}}" height="{{mfThumbnailHeight}}" alt="no-photo" class="media-object img-thumbnail" style="max-width:250px; " />
                 <input mf-photo-input-update type="file" accept="image/*" capture="camera" name="input" class="photo-input" id="{{mfIdInput}}" style="display: none;"/>

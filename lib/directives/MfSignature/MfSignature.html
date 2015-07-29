@@ -1,4 +1,4 @@
-<div bindonce class="signature-style" bo-class="getCssClassesContainer()" ng-class="getCssError(form)">
+<div bindonce class="signature-style  form-group {{mfCssClassContainer}}" ng-class="getCssError(form)">
 <ng-form name="form">
         <mf-label
         mf-required-field="{{mfRequired}}"
@@ -7,7 +7,7 @@
         mf-hide-label="{{mfHideLabel}}"
         ng-if="mfLabel">
         </mf-label>
-        <div bo-class="getCssClassesInputContainer()" data-snap-ignore="true">
+        <div class="signature-input" data-snap-ignore="true">
             <canvas
                     name="canvas"
                     ng-disabled="!actions.isInEditionMode() || mfReadonly"

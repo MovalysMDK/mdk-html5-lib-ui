@@ -1,4 +1,4 @@
-<div bindonce class="value-image-style" bo-class="getCssClassesContainer()" >
+<div bindonce class="value-image-style form-group {{mfCssClassContainer}}" >
     <mf-label
         mf-required-field="false"
         mf-text="{{mfLabel}}"
@@ -6,8 +6,5 @@
         mf-hide-label="{{mfHideLabel}}"
         ng-if="mfLabel"
     ></mf-label>
-
-    <div bo-class="getCssClassesInputContainer()">
-        <img ng-src="{{mfField.pictureURI}}" alt="{{mfField.pictureName}}" ng-style="imgStyle()" class="mf-value-image"/>
-    </div>
+    <img ng-src="{{mfField.pictureURI}}" alt="{{mfField.pictureName}}" ng-style="imgStyle()" class="mf-value-image"/>
 </div>

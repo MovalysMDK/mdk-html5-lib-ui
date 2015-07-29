@@ -1,0 +1,20 @@
+<div bindonce class="multiline-field-style form-group form-without-label {{mfCssClassContainer}} col-sm-offset-2" ng-class="getCssError(form.textarea)">
+    <ng-form name="form">
+            <textarea
+                class="form-control"
+                ng-model="mfField"
+                ng-readonly="mfReadonly"
+                ng-required="mfRequired"
+                ng-disabled="!actions.isInEditionMode()"
+                placeholder="{{mfPlaceholder}}"
+                bo-attr
+                bo-id="mfId"
+                name="textarea"
+                rows="{{mfRows}}"
+                mf-format="{{mfFormat}}"
+                mf-validation="{{mfValidation}}"
+            ></textarea>
+            <!--ng-click="getFocus()"-->
+            <span class="help-block" ng-if="showError(form.textarea,'required')" translate="field.error.required"></span>
+    </ng-form>
+</div>

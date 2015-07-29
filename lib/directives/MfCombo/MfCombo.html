@@ -1,4 +1,4 @@
-<div bindonce class="combo-style" bo-class="getCssClassesContainer()" ng-class="getCssError(form.select)">
+<div bindonce class="combo-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.select)">
     <ng-form name="form">
         <mf-label
             mf-required-field="{{mfRequired}}"
@@ -8,7 +8,7 @@
             ng-if="mfLabel"
         ></mf-label>
 
-        <div bo-class="getCssClassesInputContainer()">
+        <div class="picker-input">
             <select
                 class="form-control selectPicker"
                 value="{{ item[mfField.valueAttribute] }}"
