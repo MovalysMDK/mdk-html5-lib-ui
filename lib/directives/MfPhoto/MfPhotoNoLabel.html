@@ -1,6 +1,6 @@
 <div bindonce class="photo-style form-without-label {{mfCssClassContainer}}"  ng-disabled="!actions.isInEditionMode() || mfReadonly" >
     <ng-form name="form">
-        <div class="media col-sm-offset-2" id="{{mfId}}">
+        <div class="media offset-no-label" id="{{mfId}}">
             <div class="pull-left">
                 <img ng-src="{{mfField.uri}}" width="{{mfThumbnailWidth}}" height="{{mfThumbnailHeight}}" alt="no-photo" class="media-object img-thumbnail" style="max-width:250px; " />
                 <input mf-photo-input-update type="file" accept="image/*" capture="camera" name="input" class="photo-input" id="{{mfIdInput}}" style="display: none;"/>

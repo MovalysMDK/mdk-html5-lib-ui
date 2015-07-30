@@ -26,3 +26,7 @@ input.ng-invalid.ng-dirty {
 .form-without-label{
   margin-bottom: 0px;
 }
+
+.offset-no-label{
+  @include make-sm-column-offset(2)
+}
