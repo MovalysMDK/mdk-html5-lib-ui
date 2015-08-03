@@ -2,7 +2,7 @@
     <ng-form name="form">
          <div class="date-input">
             <input
-                    mf-date-input
+                    type="date"
                     class="form-control"
                     ng-model="mfField"
                     ng-readonly="mfReadonly"
@@ -10,8 +10,6 @@
                     ng-disabled="!actions.isInEditionMode()"
                     bo-id="mfId"
                     name="input"
-                    min="{{mfMinDate}}"
-                    max="{{mfMaxDate}}"
                     />
             <!--ng-click="getFocus()"-->
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
