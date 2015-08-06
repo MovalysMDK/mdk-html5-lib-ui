@@ -1,3 +1,8 @@
+.radio-group-style{
+  padding-left: 2rem;
+
+}
+
 .radio-input{
   @include  make-sm-column(10);
 }
@@ -10,7 +15,6 @@ input[type=radio] {
     border: 0.1rem solid gray;
     border-radius: 50%;
     background: lightgray;
-    -webkit-appearance: radio;
     cursor: pointer;
 }
 

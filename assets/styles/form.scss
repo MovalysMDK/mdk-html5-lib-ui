@@ -30,3 +30,16 @@ input.ng-invalid.ng-dirty {
 .offset-no-label{
   @include make-sm-column-offset(2)
 }
+
+
+input[type="checkbox"]{
+  -webkit-appearance: checkbox;
+}
+
+input[type=radio] {
+  -webkit-appearance: radio;
+}
+
+select{
+  -webkit-appearance: menulist;
+}
