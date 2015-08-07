@@ -30,7 +30,7 @@ snap-drawer,
 }
 
 .snap-content {
-    position: fixed;
+    position: relative;
     background-color: $container-bg;
     -moz-box-shadow: 0 0 20px #888;
     -webkit-box-shadow: 0 0 20px #888;
