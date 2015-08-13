@@ -8,6 +8,7 @@
                 ng-readonly="mfReadonly"
                 ng-required="mfRequired"
                 ng-disabled="!actions.isInEditionMode()"
+                ng-click=$event.stopPropagation()
                 bo-id="mfId"
                 name="input"
             />
