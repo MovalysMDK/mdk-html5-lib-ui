@@ -48,3 +48,13 @@ body {
 .main-container{
   position: relative;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: column ;
+
+}
+
+.flex-item {
+  overflow: scroll;
+}
