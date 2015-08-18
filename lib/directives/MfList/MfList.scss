@@ -61,6 +61,24 @@ ul.mflist-1D li .mflist-item-body {
 ===================
 */
 
+.list-container{
+  height:100%;
+  position:relative;
+}
+
+
+
+.list-scroll{
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  overflow:auto;
+}
+
 
 .mflist-2D .mflist-sublist{
   @extend .list-group;
