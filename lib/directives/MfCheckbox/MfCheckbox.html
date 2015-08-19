@@ -1,18 +1,19 @@
 <div bindonce class="checkbox-style margin-bottom-0 form-group {{mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <div class="checkbox">
-            <input
-                type="checkbox"
-                class="inputCheckBox"
-                ng-model="mfField"
-                ng-readonly="mfReadonly"
-                ng-required="mfRequired"
-                ng-disabled="!actions.isInEditionMode()"
-                ng-click=$event.stopPropagation()
-                bo-id="mfId"
-                name="input"
-            />
-             <label id="{{mfLabelId}}" for="{{mfId}}">
+
+             <label>
+                 <input
+                         type="checkbox"
+                         class="inputCheckBox"
+                         ng-model="mfField"
+                         ng-readonly="mfReadonly"
+                         ng-required="mfRequired"
+                         ng-disabled="!actions.isInEditionMode()"
+                         ng-click=$event.stopPropagation()
+                         bo-id="mfId"
+                         name="input"
+                         />
                 <div ng-if="!hideLabel()"><span>{{mfLabel | translate}}</span><span ng-if="requiredField()"> *</span></div>
             </label>
             <span class="help-block margin-top-0" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
