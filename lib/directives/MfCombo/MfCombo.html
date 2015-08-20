@@ -1,4 +1,4 @@
-<div bindonce class="combo-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.select)">
+<div class="combo-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.select)">
     <ng-form name="form">
         <mf-label
             mf-required-field="{{mfRequired}}"
@@ -17,8 +17,7 @@
                 ng-required="mfRequired"
                 ng-readonly="mfReadonly"
                 ng-disabled="!actions.isInEditionMode() || mfReadonly"
-                bo-attr
-                bo-id="{{ mfId }}"
+                id="{{ ::mfId }}"
                 ng-options="item[mfField.valueAttribute] as getContent(item) | translate for item in mfField.itemsList">
             </select>
 

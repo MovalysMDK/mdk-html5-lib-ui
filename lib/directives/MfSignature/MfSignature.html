@@ -1,4 +1,4 @@
-<div bindonce class="signature-style  form-group {{mfCssClassContainer}}" ng-class="getCssError(form)">
+<div class="signature-style  form-group {{::mfCssClassContainer}}" ng-class="getCssError(form)">
 <ng-form name="form">
         <mf-label
         mf-required-field="{{mfRequired}}"
@@ -13,7 +13,7 @@
                     ng-disabled="!actions.isInEditionMode() || mfReadonly"
                     style="padding:0px;"
                     width="{{mfWidthCanvas}}" height="{{mfHeightCanvas}}"
-                    class="mfSignatureCanvas well" bo-attr bo-id="mfId"
+                    class="mfSignatureCanvas well" id="::mfId"
                     ng-mousemove="onmousemove($event)"
                    >
             </canvas>

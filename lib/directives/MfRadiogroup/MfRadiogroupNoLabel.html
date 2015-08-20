@@ -1,4 +1,4 @@
-<div bindonce class="radio-group-style form-group form-without-label {{mfCssClassContainer}} offset-no-label">
+<div class="radio-group-style form-group form-without-label {{mfCssClassContainer}} offset-no-label">
     <div class="radio-input">
          <!-- @see http://getbootstrap.com/css/#forms-controls -->
          <div class="radio" ng-repeat="item in mfField.itemsList">
@@ -16,7 +16,7 @@
                         ng-required="mfRequired"
                         ng-disabled="!actions.isInEditionMode() || mfReadonly"
                         placeholder="{{mfPlaceholder}}"
-                        bo-id="{{ mfId +'_'+ item.id}}">
+                        id="::{{ mfId +'_'+ item.id}}">
 
 
                 {{ getContent(item) | translate }}

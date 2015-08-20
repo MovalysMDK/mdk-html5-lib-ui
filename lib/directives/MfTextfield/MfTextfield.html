@@ -1,4 +1,4 @@
-<div bindonce class="textfield-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.input)">
+<div class="textfield-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form" >
         <mf-label
             mf-required-field="{{mfRequired}}"
@@ -17,7 +17,7 @@
                 ng-required="mfRequired"
                 ng-disabled="!actions.isInEditionMode()"
                 placeholder="{{mfPlaceholder | translate}}"
-                bo-id="mfId"
+                id="::mfId"
                 name="input"
                 mf-format="{{mfFormat}}"
                 mf-validation="{{mfValidation}}"

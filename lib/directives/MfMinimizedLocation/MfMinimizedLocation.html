@@ -1,4 +1,4 @@
-<div bindonce class="minimized-location-style form-group {{mfCssClassContainer}}">
+<div class="minimized-location-style form-group {{::mfCssClassContainer}}">
     <ng-form name="form">
         <mf-label
                 mf-text="{{mfLabel}}"
@@ -12,8 +12,7 @@
                         ng-model="positionRequested"
                         class="inputCheckBox"
                         name="input"
-                        bindonce
-                        bo-id="mfId"
+                        id="::mfId"
                         ng-change="onCheckboxChange()"
                         ng-show="actions.isInEditionMode() && !mfReadOnly"
                 />

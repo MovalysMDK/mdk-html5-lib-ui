@@ -1,14 +1,14 @@
 <div class="subcontrolbar">
-    <header class="panel-heading" bindonce bo-hide="!viewConfig.hideSubControlBar">
-        <h3 class="panel-title"><span bindonce="subcontrolbar.title" bo-text="subcontrolbar.title"></span></h3>
+    <header class="panel-heading" hide="::!viewConfig.hideSubControlBar">
+        <h3 class="panel-title"><span text="::subcontrolbar.title"></span></h3>
     </header>
 
-    <nav class="navbar panel-heading navbar-inverse" role="navigation" bindonce bo-hide="viewConfig.hideSubControlBar" >
+    <nav class="navbar panel-heading navbar-inverse" role="navigation" hide="::viewConfig.hideSubControlBar" >
 
         <div class="navbar-header">
 
             <div class="title-app">
-                <span bindonce="subcontrolbar.title" bo-text="subcontrolbar.title"></span>
+                <span text="::subcontrolbar.title"></span>
             </div>
 
             <div class="pull-right">

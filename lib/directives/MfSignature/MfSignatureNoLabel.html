@@ -1,4 +1,4 @@
-<div bindonce class="signature-style" class="form-group form-without-label {{mfCssClassContainer}} offset-no-label" ng-class="getCssError(form)">
+<div class="signature-style" class="form-group form-without-label {{::mfCssClassContainer}} offset-no-label" ng-class="getCssError(form)">
 <ng-form name="form">
         <div class="signature-input" data-snap-ignore="true">
             <canvas
@@ -6,7 +6,7 @@
                     ng-disabled="!actions.isInEditionMode() || mfReadonly"
                     style="padding:0px;"
                     width="{{mfWidthCanvas}}" height="{{mfHeightCanvas}}"
-                    class="mfSignatureCanvas well" bo-attr bo-id="mfId"
+                    class="mfSignatureCanvas well" id="::mfId"
                     ng-mousemove="onmousemove($event)"
                    >
             </canvas>

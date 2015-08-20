@@ -1,4 +1,4 @@
-<div bindonce class="radio-group-style form-group {{mfCssClassContainer}}">
+<div class="radio-group-style form-group {{::mfCssClassContainer}}">
     <mf-label
             mf-required-field="{{mfRequired}}"
             mf-text="{{mfLabel}}"
@@ -9,7 +9,7 @@
     <span ng-repeat="item in mfField.itemsList"
           class="mfTextview"
           ng-if="item[mfField.valueAttribute] == mfField.selectedItemValue"
-          bo-id="{{ mfId +'_'+ item.id}}">
+          id="::{{ mfId +'_'+ item.id}}">
                  {{ getContent(item) | translate }} label
     </span>
 

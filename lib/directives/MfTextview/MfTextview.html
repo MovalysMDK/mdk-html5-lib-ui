@@ -1,4 +1,4 @@
-<div bindonce class="textview-style form-group {{mfCssClassContainer}}">
+<div class="textview-style form-group {{::mfCssClassContainer}}">
     <mf-label
         mf-required-field="false"
         mf-text="{{mfLabel}}"
@@ -10,6 +10,6 @@
     <span
         class="mfTextview"
         ng-bind="mfField"
-        bo-id="mfId">
+        id="::mfId">
     </span>
 </div>

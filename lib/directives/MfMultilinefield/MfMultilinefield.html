@@ -1,4 +1,4 @@
-<div bindonce class="multiline-field-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.textarea)">
+<div class="multiline-field-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.textarea)">
     <ng-form name="form">
         <mf-label
                 mf-required-field="{{mfRequired}}"
@@ -16,8 +16,7 @@
                 ng-required="mfRequired"
                 ng-disabled="!actions.isInEditionMode()"
                 placeholder="{{mfPlaceholder}}"
-                bo-attr
-                bo-id="mfId"
+                id="::mfId"
                 name="textarea"
                 rows="{{mfRows}}"
                 mf-format="{{mfFormat}}"

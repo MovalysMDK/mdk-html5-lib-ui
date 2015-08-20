@@ -1,4 +1,4 @@
-<div bindonce class="double-field-style form-group {{mfCssClassContainer}}" ng-class="getCssError(form.input)">
+<div class="double-field-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <mf-label
             mf-required-field="{{mfRequired}}"
@@ -16,12 +16,11 @@
                 ng-readonly="mfReadonly"
                 ng-required="mfRequired"
                 ng-disabled="!actions.isInEditionMode()"
-                placeholder="{{mfPlaceholder}}"
-                bo-attr
-                bo-id="mfId"
+                placeholder="{{::mfPlaceholder}}"
+                id="::mfId"
                 name="input"
-                min="{{mfMin}}"
-                max="{{mfMax}}"
+                min="{{::mfMin}}"
+                max="{{::mfMax}}"
                 ng-pattern="mfPattern"
             />
             <!--ng-click="getFocus()"-->

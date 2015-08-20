@@ -1,4 +1,4 @@
-<div bindonce class="date-time-style form-group form-without-label {{mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.input)">
+<div class="date-time-style form-group form-without-label {{::mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <div class="date-time-input">
             <input
@@ -8,7 +8,7 @@
                     ng-readonly="mfReadonly"
                     ng-required="mfRequired"
                     ng-disabled="!actions.isInEditionMode()"
-                    bo-id="mfId"
+                    id="::mfId"
                     name="input"
                     />
             <!--ng-click="getFocus()"-->

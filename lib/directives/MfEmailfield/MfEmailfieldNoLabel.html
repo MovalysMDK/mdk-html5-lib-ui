@@ -1,4 +1,4 @@
-<div bindonce classe="email-style form-group form-without-label {{mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.input)">
+<div classe="email-style form-group form-without-label {{::mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <div class="email-input">
             <div class="input-group">
@@ -11,8 +11,7 @@
                     ng-disabled="!actions.isInEditionMode()"
                     ng-pattern="mfPattern"
                     placeholder="{{mfPlaceholder}}"
-                    bo-attr
-                    bo-id="mfId"
+                    id="::mfId"
                     name="input"
                 />
                 <!--ng-click="getFocus()"-->

@@ -1,4 +1,4 @@
-<div bindonce class="radio-group-style form-group {{mfCssClassContainer}}">
+<div class="radio-group-style form-group {{::mfCssClassContainer}}">
 	<mf-label
         mf-required-field="{{mfRequired}}"
         mf-text="{{mfLabel}}"
@@ -23,7 +23,7 @@
                     ng-required="mfRequired"
                     ng-disabled="!actions.isInEditionMode() || mfReadonly"
                     placeholder="{{mfPlaceholder}}"
-                    bo-id="{{ mfId +'_'+ item.id}}">
+                    id="::{{ mfId +'_'+ item.id}}">
 
 
             {{ getContent(item) | translate }}

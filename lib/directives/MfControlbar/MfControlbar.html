@@ -8,10 +8,10 @@
                 <li ng-if="controlbar.buttonBack()" href="" ng-click="controlbar.goBack()">
                     <img src="assets/pictures/glyphicons-225-chevron-left.png" ng-click="controlbar.goBack()"/>
                 </li>
-                <li bindonce bo-show="controlbar.buttonHome()">
+                <li show="::controlbar.buttonHome()">
                     <a href="" ng-click="controlbar.goHome()" snap-close><img src="assets/pictures/ab_logo.png"/></a>
                 </li>
-                <li bindonce bo-class="controlbar.getCssShowTitle()">
+                <li class="::controlbar.getCssShowTitle()">
                     <!--<span refresh-on="'refreshMfTitle'" bindonce bo-text="mfTitle" ></span>-->
                     <span>{{controlbar.getTitleText() | translate}}</span>
                 </li>
@@ -31,7 +31,7 @@
                 <!-- button remove -->
                 <li ng-if="controlbar.buttonRemove()"><a href="" ng-click="controlbar.goRemove()" snap-close><img src="assets/pictures/glyphicons-17-bin-white.png"/></a></li>
                 <!-- button options/menu -->
-                <li bindonce bo-show="controlbar.buttonActionMenu()" class="dropdown">
+                <li show="::controlbar.buttonActionMenu()" class="dropdown">
                     <a href="#" class="dropdown-toggle">
                         <div>
                             <span class="icon-bar"></span>

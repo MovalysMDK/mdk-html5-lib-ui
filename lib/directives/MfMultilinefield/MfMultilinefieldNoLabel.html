@@ -1,4 +1,4 @@
-<div bindonce class="multiline-field-style form-group form-without-label {{mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.textarea)">
+<div class="multiline-field-style form-group form-without-label {{::mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.textarea)">
     <ng-form name="form">
             <textarea
                 class="form-control"
@@ -7,8 +7,7 @@
                 ng-required="mfRequired"
                 ng-disabled="!actions.isInEditionMode()"
                 placeholder="{{mfPlaceholder}}"
-                bo-attr
-                bo-id="mfId"
+                id="::mfId"
                 name="textarea"
                 rows="{{mfRows}}"
                 mf-format="{{mfFormat}}"
