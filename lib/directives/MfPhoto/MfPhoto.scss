@@ -3,6 +3,6 @@
 }
 
 .media-body{
-  margin-left: 0px;
-  margin-right: 0px;
+  -webkit-transform: translateZ(0);
+  min-width: 300px;
 }
