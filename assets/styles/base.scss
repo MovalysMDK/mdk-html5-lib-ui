@@ -64,3 +64,14 @@ body {
   position: relative;
 }
 
+#loading-bar-spinner {
+  top: 50%;
+  left: 45%;
+}
+
+#loading-bar-spinner .spinner-icon {
+  width: 28px;
+  height: 28px;
+  border-top-color:  #545454;
+  border-left-color: #545454;
+}
