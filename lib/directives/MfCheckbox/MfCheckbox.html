@@ -9,7 +9,7 @@
                          ng-model="mfField"
                          ng-readonly="mfReadonly"
                          ng-required="mfRequired"
-                         ng-disabled="!actions.isInEditionMode()"
+                         ng-disabled="!actions.isInEditionMode() || mfReadonly"
                          ng-click=$event.stopPropagation()
                          id="::mfId"
                          name="input"
