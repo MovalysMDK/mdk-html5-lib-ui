@@ -11,7 +11,7 @@
     "modal.cancel": "Annuler",
     "modal.ok": "Ok",
 
-    "field.error.required": "Le champs est obligatoire.",
+    "field.error.required": "Le champ est obligatoire.",
     "field.error.number": "[TODO fr translation] This field must be a number",
     "field.error.integer": "[TODO fr translation] This field must be an integer",
     "field.error.double": "[TODO fr translation] This field must be a double value",
@@ -21,7 +21,7 @@
     "field.error.email": "[TODO fr translation] This filed must be an email address",
     "field.error.phone": "[TODO fr translation] This filed must be a phone number",
     "field.error.date": "[TODO fr translation] This field must be a date",
-    "field.error.generic": "Le champs n'est pas valide.",
+    "field.error.generic": "Le champ n'est pas valide.",
 
     "field.mfaddresslocation.lat.label": "Latitude",
     "field.mfaddresslocation.lng.label": "Longitude",
