@@ -28,6 +28,8 @@
 
 
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+            <span class="help-block" ng-if="showError(form.input,'invalid')">{{msgError}}</span>
+
         </div>
     </ng-form>
 </div>
