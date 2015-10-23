@@ -75,5 +75,8 @@
     "enum__MFPhotoState__SELECTED": "Selected",
     "enum__MFPhotoState__DOWNLOADED": "Downloaded",
     "enum__MFPhotoState__TAKEN": "Taken",
-    "enum__MFPhotoState__TODOWNLOAD": "To download"
+    "enum__MFPhotoState__TODOWNLOAD": "To download",
+
+    "form.not.valid": "The form is not valid"
+
 }
