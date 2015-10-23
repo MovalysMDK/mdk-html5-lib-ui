@@ -77,7 +77,7 @@
     "enum__MFPhotoState__TAKEN": "Taken",
     "enum__MFPhotoState__TODOWNLOAD": "To download",
 
-    "form.not.valid": "The form is not valid",
+    "form.error.invalid": "The form is not valid",
 
     "notification.error": "ERROR",
     "notification.info": "INFO",
