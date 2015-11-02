@@ -18,10 +18,12 @@
         }
         .#{$container-style-name} {
           width: workspace-container-width($columns-number, $default-displayed-columns);
+          height: 100%;
         }
       } @else {
         .#{$container-style-name} {
           width: workspace-container-width($columns-number, $displayed-columns);
+          height: 100%;
         }
       }
     }
@@ -48,8 +50,11 @@
     .#{$workspace-column-style-name} {
       width: workspace-column-width($workspace-columns-number);
       float: left;
+      height: 100%;
+      position: relative;
       padding-top: $controlbar-height;
       margin-top: -$controlbar-height;
+
     }
 
     /*
