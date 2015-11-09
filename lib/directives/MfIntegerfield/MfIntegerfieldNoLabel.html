@@ -14,6 +14,7 @@
                 min="{{mfMin}}"
                 max="{{mfMax}}"
                 ng-pattern="mfPattern"
+                mf-validation="{{mfValidation}}"
             />
             <!--ng-click="getFocus()"-->
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
@@ -21,6 +22,7 @@
             <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.integer"></span>
             <span class="help-block" ng-if="showError(form.input,'min')" translate="field.error.min" translate-values="{ value: '{{mfMin}}'}"></span>
             <span class="help-block" ng-if="showError(form.input,'max')" translate="field.error.max" translate-values="{ value: '{{mfMax}}'}"></span>
+            <span class="help-block" ng-if="showError(form.input,'invalid')" translate="{{msgError}}"></span>
         </div>
     </ng-form>
 </div>

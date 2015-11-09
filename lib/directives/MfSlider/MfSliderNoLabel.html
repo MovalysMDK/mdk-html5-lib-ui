@@ -5,11 +5,14 @@
                        ng-model="mfField"
                        ng-readonly="mfReadonly"
                        ng-required="mfRequired"
-                       ng-disabled="!actions.isInEditionMode()">
+                       ng-disabled="!actions.isInEditionMode()"
+                       mf-validation="{{mfValidation}}"
+                       name="input">
         </span>
         <span class="span-value-field">
             <h4  ng-show="showValue" style="float:right; margin-top:2pt; width: 18%">{{mfField}}</h4>
         </span>
 
+        <span class="help-block" ng-if="showError(form.input,'invalid')" translate="{{msgError}}"></span>
     </ng-form>
 </div>

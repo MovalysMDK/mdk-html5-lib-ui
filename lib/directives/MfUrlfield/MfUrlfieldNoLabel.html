@@ -11,6 +11,7 @@
                     placeholder="{{mfPlaceholder}}"
                     id="::mfId"
                     name="input"
+                    mf-validation="{{mfValidation}}"
                 />
                 <!--ng-click="getFocus()"-->
                 <span class="input-group-btn">
@@ -22,5 +23,6 @@
             </div>
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
             <span class="help-block" ng-if="showError(form.input,'url')" translate="field.error.url"></span>
+            <span class="help-block" ng-if="showError(form.input,'invalid')" translate="{{msgError}}"></span>
     </ng-form>
 </div>
