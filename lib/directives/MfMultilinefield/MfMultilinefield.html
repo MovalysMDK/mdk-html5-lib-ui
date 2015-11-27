@@ -24,7 +24,7 @@
             ></textarea>
             <!--ng-click="getFocus()"-->
             <span class="help-block" ng-if="showError(form.textarea,'required')" translate="field.error.required"></span>
-            <span class="help-block" ng-if="showError(form.textarea,'invalid')" translate="{{msgError}}"></span>
+            <span class="help-block" ng-if="showError(form.textarea,'customValidator')" translate="{{msgError}}"></span>
         </div>
     </ng-form>
 </div>

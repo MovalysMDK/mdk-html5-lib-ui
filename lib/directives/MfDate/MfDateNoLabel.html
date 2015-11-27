@@ -15,7 +15,7 @@
             <!--ng-click="getFocus()"-->
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
             <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.date"></span>
-             <span class="help-block" ng-if="showError(form.input,'invalid')" translate="{{msgError}}"></span>
+             <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
         </div>
     </ng-form>
 </div>

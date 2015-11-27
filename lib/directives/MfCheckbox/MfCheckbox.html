@@ -18,7 +18,7 @@
                 <div ng-if="!hideLabel()"><span>{{mfLabel | translate}}</span><span ng-if="requiredField()"> *</span></div>
             </label>
             <span class="help-block margin-top-0" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
-            <span class="help-block" ng-if="showError(form.input,'invalid')" translate="{{msgError}}"></span>
+            <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
         </div>
     </ng-form>
 </div>
