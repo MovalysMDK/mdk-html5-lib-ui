@@ -1,9 +1,9 @@
 {
-  "name": "mdk-html5-ui",
+  "name": "mdk-html5-lib-ui",
   "version": "1.1.1",
   "repository": {
-    "type": "svn",
-    "url": "svn+http://svn.ntes.fr.sopra/svnpolemobility/svn/Movalys/repository/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
+    "type": "git",
+    "url": "gitmovalys@git.ptx.fr.sopra:mdk-html5-lib-ui.git"
   },
   "description": "MDK HTML 5 UI Framework",
   "json": "bower.json",
@@ -19,7 +19,8 @@
     "angular-growl-v2": "=0.7.5",
     "bootstrap-sass-official": "=3.3.5",
     "normalize-css": "=3.0.3",
-    "snapjs": "=1.9.3"
+    "snapjs": "=1.9.3",
+    "ionic": "~1.1.1"
   },
   "devDependencies": {},
   "private": true,
@@ -98,6 +99,7 @@
     "lib/viewmodels/componentsVM/factories/MFValueImageVMFactory.js"
   ],
   "resolutions": {
-    "angular": "1.4.3"
+    "angular": "1.4.3",
+    "angular-ui-router": "=0.2.15"
   }
 }

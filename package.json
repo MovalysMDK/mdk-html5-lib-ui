@@ -1,5 +1,5 @@
 {
-  "name": "mdk-html5-ui",
+  "name": "mdk-html5-lib-ui",
   "private": false,
   "version": "1.1.1",
   "codename": "Cotopaxi",
@@ -7,8 +7,8 @@
   "description": "MDK HTML5 UI Framework",
   "main": [],
   "repository": {
-    "type": "svn",
-    "url": "http://svn.ntes.fr.sopra/svnpolemobility/svn/Movalys/repository/com/adeuza/movalysfwk/html5/mdk-html5-ui/"
+    "type": "git",
+    "url": "gitmovalys@git.ptx.fr.sopra:mdk-html5-lib-ui.git"
   },
   "keywords": [
     "mdk",
