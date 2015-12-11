@@ -1,5 +1,6 @@
 body {
   margin-top: $controlbar-height;
+  -webkit-font-smoothing: subpixel-antialiased;
   font-weight: lighter;
   font-style: verdana;
   color: #545454;
@@ -14,14 +15,13 @@ body {
 }
 
 
-.menu > ul {
+.mdk-menu > ul {
   padding: 0;
   margin: 0;
   font-size: 2rem;
 }
 
-.menu > ul > li {
-
+.mdk-menu > ul > li {
 
   list-style-type: none;
   display: block;
@@ -31,7 +31,7 @@ body {
   text-align:center;
 }
 
-.menu li:hover {
+.mdk-menu li:hover {
 
   color: #FFFFFF;
   background-color: #545454;
