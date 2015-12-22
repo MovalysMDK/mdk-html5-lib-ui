@@ -19,6 +19,7 @@
                 <span class="input-group-btn">
                     <a href="tel:{{ mfField }}"
                        class="btn btn-default"
+                       ng-class="{'disabled' : (isEmpty() || showError(form.input,'pattern'))}"
                        ng-disabled="isEmpty() || showError(form.input,'pattern')">
                         <img src="assets/pictures/glyphicons-443-earphone.png"/>
                     </a>

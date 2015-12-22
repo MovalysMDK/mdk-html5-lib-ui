@@ -24,7 +24,9 @@
                 />
                 <!--ng-click="getFocus()"-->
                 <span class="input-group-btn">
-                    <a href="{{mfField}}" ng-disabled="isEmpty() || showError(form.input,'pattern')"
+                    <a href="{{mfField}}"
+                       ng-class="{'disabled' : (isEmpty() || showError(form.input,'pattern'))}"
+                       ng-disabled="isEmpty() || showError(form.input,'pattern')"
                        class="btn btn-default" target="_blank">
                     <img src="assets/pictures/glyphicons-390-new-window-alt.png"/>
                     </a>
