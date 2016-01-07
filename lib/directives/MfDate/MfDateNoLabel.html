@@ -1,21 +1,20 @@
-<div class="date-style form-group form-without-label {{::mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.input)">
+<div class="date-style form-group form-without-label {{::mfCssClassContainer}} offset-no-label"
+     ng-class="getCssError(form.input)">
     <ng-form name="form">
-         <div class="date-input">
-            <input
-                    type="date"
-                    class="form-control"
-                    ng-model="mfField"
-                    ng-readonly="mfReadonly"
-                    ng-required="mfRequired"
-                    ng-disabled="!actions.isInEditionMode()"
-                    id="::mfId"
-                    name="input"
-                    mf-validation="{{mfValidation}}"
-                    />
-            <!--ng-click="getFocus()"-->
-            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
-            <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.date"></span>
-             <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
-        </div>
+        <input
+                type="date"
+                class="form-control"
+                ng-model="mfField"
+                ng-readonly="mfReadonly"
+                ng-required="mfRequired"
+                ng-disabled="!actions.isInEditionMode()"
+                id="::mfId"
+                name="input"
+                mf-validation="{{mfValidation}}"
+                />
+        <!--ng-click="getFocus()"-->
+        <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+        <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.date"></span>
+        <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
     </ng-form>
 </div>
