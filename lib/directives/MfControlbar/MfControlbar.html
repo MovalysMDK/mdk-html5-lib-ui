@@ -1,6 +1,4 @@
-<header ng-hide="!controlBarEnabled" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-
+<header ng-hide="!controlBarEnabled" class="mdk-navbar" role="navigation">
         <div class="title-app">
             <ul class="list-inline">
                 <li ng-if="controlbar.buttonSlidingMenu()" snap-toggle="left" ng-class="controlbar.getCssSnap()">
@@ -17,7 +15,6 @@
                 </li>
             </ul>
         </div>
-
         <div class="active-bar pull-right">
             <ul class="list-inline">
                 <!-- button save -->
@@ -49,6 +46,4 @@
                 </li>
             </ul>
         </div>
-
-    </div><!-- /.navbar-header -->
 </header>
