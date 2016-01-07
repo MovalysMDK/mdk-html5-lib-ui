@@ -1,15 +1,13 @@
 <div class="textfield-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
-    <ng-form name="form" >
+    <ng-form name="form">
         <mf-label
-            mf-required-field="{{mfRequired}}"
-            mf-text="{{mfLabel}}"
-            mf-associated-field="{{mfId}}"
-            mf-hide-label="{{mfHideLabel}}"
-            ng-if="mfLabel"
-        ></mf-label>
-
-        <div>
-            <input
+                mf-required-field="{{mfRequired}}"
+                mf-text="{{mfLabel}}"
+                mf-associated-field="{{mfId}}"
+                mf-hide-label="{{mfHideLabel}}"
+                ng-if="mfLabel"
+                ></mf-label>
+        <input
                 class="form-control"
                 type="{{mfType}}"
                 ng-model="mfField"
@@ -23,13 +21,9 @@
                 mf-validation="{{mfValidation}}"
                 typeahead="{{mfTypehead}}"
                 typeahead-editable="{{mfTypeaheadEditable}}"
-            />
-            <!--ng-click="getFocus()"-->
-
-
-            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
-            <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
-
-        </div>
+                />
+        <!--ng-click="getFocus()"-->
+        <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+        <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
     </ng-form>
 </div>

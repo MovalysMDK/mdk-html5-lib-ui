@@ -1,10 +1,8 @@
 body {
-  margin-top: $controlbar-height;
   -webkit-font-smoothing: subpixel-antialiased;
   font-weight: lighter;
   font-style: verdana;
   color: #545454;
-  overflow: hidden;
 }
 
 .container {
@@ -13,7 +11,6 @@ body {
   width: 100%;
   background-color: $container-bg;
 }
-
 
 .mdk-menu > ul {
   padding: 0;
@@ -25,10 +22,9 @@ body {
 
   list-style-type: none;
   display: block;
-  height: 35px;
   border-bottom: 1px solid #545454;
-  padding-left: 20px;
-  text-align:center;
+  padding: 5px 0px;
+  text-align: center;
 }
 
 .mdk-menu li:hover {
@@ -38,30 +34,36 @@ body {
   border-bottom: 1px solid #FFFFFF;
 }
 
-
 .vcenter {
   display: inline-block;
   vertical-align: middle;
   float: none;
 }
 
-.main-container{
-  position: relative;
+.main-container {
+  position: fixed;
+  top: $controlbar-height;
+  left: 0;
+  right: 0;
+  background-color: $navbar-inverse-bg;
 }
 
 .flex-container {
-  display: flex;
-  flex-direction: column ;
-  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: $controlbar-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
 }
 
 .flex-item {
-  overflow: scroll;
 }
 
-.panel-list-container{
-  height:100%;
+.panel-list-container {
+  height: 100%;
   position: relative;
 
 }
@@ -74,6 +76,34 @@ body {
 #loading-bar-spinner .spinner-icon {
   width: 28px;
   height: 28px;
-  border-top-color:  #545454;
+  border-top-color: #545454;
   border-left-color: #545454;
+}
+
+.mdk-inline-align-container {
+  text-align: center;
+}
+
+.mdk-inline-align-element {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mdk-base-element-margin {
+  margin: 0 5px;
+}
+
+.mdk-base-container-margin {
+  margin: 0 10px;
+}
+
+.mdk-well {
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: $well-bg;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+ng-form {
 }

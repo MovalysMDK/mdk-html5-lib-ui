@@ -1,16 +1,14 @@
 <div class="combo-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.select)">
     <ng-form name="form">
         <mf-label
-            mf-required-field="{{mfRequired}}"
-            mf-text="{{mfLabel}}"
-            mf-associated-field="{{mfId}}"
-            mf-hide-label="{{mfHideLabel}}"
-            ng-if="mfLabel"
-        ></mf-label>
-
-        <div class="picker-input">
-            <select
-                class="form-control selectPicker"
+                mf-required-field="{{mfRequired}}"
+                mf-text="{{mfLabel}}"
+                mf-associated-field="{{mfId}}"
+                mf-hide-label="{{mfHideLabel}}"
+                ng-if="mfLabel"
+                ></mf-label>
+        <select
+                class="form-control"
                 value="{{ item[mfField.valueAttribute] }}"
                 name="select"
                 ng-model="mfField.selectedItemValue"
@@ -19,9 +17,7 @@
                 ng-disabled="!actions.isInEditionMode() || mfReadonly"
                 id="{{ ::mfId }}"
                 ng-options="item[mfField.valueAttribute] as getContent(item) | translate for item in mfField.itemsList">
-            </select>
-
-            <span class="help-block" ng-if="showError(form.select,'required')" translate="field.error.required"></span>
-        </div>
+        </select>
+        <span class="help-block" ng-if="showError(form.select,'required')" translate="field.error.required"></span>
     </ng-form>
 </div>

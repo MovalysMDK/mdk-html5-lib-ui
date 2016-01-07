@@ -2,115 +2,111 @@
  * Styles for directive mf-controlbar
  */
 
-.navbar-inverse {
-    background-color: $navbar-inverse-bg;
-    color: $navbar-inverse-text;
+.mdk-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $navbar-inverse-bg;
+  color: $navbar-inverse-text;
+  height: $controlbar-height;
+  .title-app {
+    float: left;
     height: $controlbar-height;
-}
+    font-size: 2rem;
 
-.button-snap-opened {
-
-  @extend .glyphicon;
-  @extend .glyphicon-list;
-}
-
-.button-snap-closed {
-  @extend .glyphicon;
-  @extend .glyphicon-list;
-  transform: translate(-4px,0);
-  -webkit-transform: translate(-4px,0);
-  -o-transform: translate(-4px,0);
-  -moz-transform: translate(-4px,0);
-}
-
-
-.navbar-header {
-    width: 100%;
-    position: relative;
-    margin: 0;
-
-    .title-app {
-        float: left;
-        height: $controlbar-height;
-        font-size: 2rem;
-
-        img {
-            width: auto;
-            max-height: 5rem;
-        }
-
-        ul{
-            margin-top: 0;
-
-            li {
-                padding: 0;
-            }
-        }
-    }
-
-    .active-bar {
-        margin-top: 8px;
-        height: 47px;
-        font-size: 24px;
-
-        .dropdown-menu{
-            a{
-                color: $navbar-inverse-dropdown-link;
-                cursor: pointer;
-
-                &:hover, &:focus {
-                    color: $navbar-inverse-dropdown-link-hover;
-                }
-            }
-        }
+    img {
+      width: auto;
+      max-height: 5rem;
     }
 
     ul {
-        margin-bottom: 0;
+      margin-top: 0;
 
-      li{
-            padding-left: 2px;
-            padding-right: 2px;
-            vertical-align: middle;
+      li {
+        padding: 0;
+      }
+    }
+  }
 
-            &:last-child{
-                padding-right: 1rem;
-            }
+  .button-snap-opened {
 
-            a {
-                color: $navbar-inverse-link;
+    @extend .glyphicon;
+    @extend .glyphicon-list;
+  }
 
-                div{
-                    width: 20px;
+  .button-snap-closed {
+    @extend .glyphicon;
+    @extend .glyphicon-list;
+    transform: translate(-4px, 0);
+    -webkit-transform: translate(-4px, 0);
+    -o-transform: translate(-4px, 0);
+    -moz-transform: translate(-4px, 0);
+  }
 
-                    span.icon-bar{
-                        display: block;
-                        width: 8px;
-                        height: 8px;
-                        border-radius: 1px;
-                        background-color: $navbar-inverse-link;
-                        margin-bottom: 4px;
-                        margin-left:auto;
-                        margin-right:auto;
+  .active-bar {
+    margin-top: 8px;
+    height: 47px;
+    font-size: 24px;
 
-                        &:last-child{
-                            margin-bottom: 10px;
-                        }
-                    }
-                }
+    .dropdown-menu {
+      a {
+        color: $navbar-inverse-dropdown-link;
+        cursor: pointer;
 
-                &:hover, &:focus {
-                    color: $navbar-inverse-link-hover;
-
-                    span.icon-bar{
-                        background-color: $navbar-inverse-link-hover;
-                    }
-                }
-            }
-
+        &:hover, &:focus {
+          color: $navbar-inverse-dropdown-link-hover;
         }
-    }//.navbar-header ul
+      }
+    }
+  }
 
+  ul {
+    margin-bottom: 0;
+
+    li {
+      padding-left: 2px;
+      padding-right: 2px;
+      vertical-align: middle;
+
+      &:last-child {
+        padding-right: 1rem;
+      }
+
+      a {
+        color: $navbar-inverse-link;
+
+        div {
+          width: 20px;
+
+          span.icon-bar {
+            display: block;
+            width: 8px;
+            height: 8px;
+            border-radius: 1px;
+            background-color: $navbar-inverse-link;
+            margin-bottom: 4px;
+            margin-left: auto;
+            margin-right: auto;
+
+            &:last-child {
+              margin-bottom: 10px;
+            }
+          }
+        }
+
+        &:hover, &:focus {
+          color: $navbar-inverse-link-hover;
+
+          span.icon-bar {
+            background-color: $navbar-inverse-link-hover;
+          }
+        }
+      }
+
+    }
+  }
+  //.navbar-header ul
 
 }
 

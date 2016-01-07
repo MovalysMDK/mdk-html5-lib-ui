@@ -1,14 +1,15 @@
 @function workspace-container-width($columns-number, $displayed-columns) {
-  @return ( $columns-number / $displayed-columns ) * 100%;
+  @return ( $columns-number +1) * 100%;
 }
+
 @function workspace-column-width($columns-number) {
-  @return ( 1 / $columns-number ) * 100%;
+  @return percentage(1 / $columns-number);
 }
 
 @mixin workspace-container-compute($container-style-name, $columns-number, $displayed-columns) {
 
   // for each screen width define a media query
-  @each $default-displayed-column-number, $media-query  in $workspace-width-media-query-size {
+  @each $default-displayed-column-number, $media-query in $workspace-width-media-query-size {
 
     @media #{$media-query} {
       @if $displayed-columns == -1 {
@@ -16,8 +17,10 @@
         @if $default-displayed-columns > $columns-number {
           $default-displayed-columns: $columns-number;
         }
+
         .#{$container-style-name} {
           width: workspace-container-width($columns-number, $default-displayed-columns);
+          overflow: auto;
           height: 100%;
         }
       } @else {
@@ -35,7 +38,7 @@
 @if $application-workspace-styles != null {
   @each $wks, $values in $application-workspace-styles {
 
-    $workspace-columns-number: 2 !default;
+    $workspace-columns-number: 1 !default;
     @if map-has-key($values, workspace-columns-number) {
       $workspace-columns-number: map-get($values, workspace-columns-number);
     }
@@ -44,19 +47,19 @@
       $workspace-displayed-columns: map-get($values, workspace-displayed-columns);
     }
 
-    $workspace-column-style-name: #{$wks}-workspace-column;
     $workspace-container-style-name: #{$wks}-workspace-container;
 
-    .#{$workspace-column-style-name} {
-      width: workspace-column-width($workspace-columns-number);
+    $master-column-name: #{$wks}-master-column;
+    $workspace-column-name: #{$wks}-workSpace-column;
+
+    .#{$workspace-column-name}, .#{$master-column-name} {
+      width: 50%;
       float: left;
       height: 100%;
-      position: relative;
-      padding-top: $controlbar-height;
-      margin-top: -$controlbar-height;
-
     }
-
+    .#{$workspace-column-name} {
+      overflow: auto;
+    }
     /*
     .#{$workspace-container-style-name} {
     }
@@ -64,4 +67,11 @@
     @include workspace-container-compute($workspace-container-style-name, $workspace-columns-number, $workspace-displayed-columns);
 
   }
+
+}
+
+.mdk-workSpace-column {
+  height: 100%;
+  float: left;
+  width: 100%;
 }

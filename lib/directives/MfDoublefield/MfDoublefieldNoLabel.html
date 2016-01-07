@@ -1,9 +1,9 @@
-<div class="double-field-style form-group form-without-label {{::mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.input)">
+<div class=" {{::mfCssClassContainer}} form-group form-without-label offset-no-label double-field-style"
+     ng-class="getCssError(form.input)">
     <ng-form name="form">
-        <div class="double-input">
-            <input
+        <input
+                class=" form-control "
                 type="number"
-                class="form-control"
                 ng-model="mfField"
                 ng-readonly="mfReadonly"
                 ng-required="mfRequired"
@@ -15,14 +15,15 @@
                 max="{{mfMax}}"
                 ng-pattern="mfPattern"
                 mf-validation="{{mfValidation}}"
-            />
-            <!--ng-click="getFocus()"-->
-            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
-            <span class="help-block" ng-if="showError(form.input,'number')" translate="field.error.number"></span>
-            <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.double"></span>
-            <span class="help-block" ng-if="showError(form.input,'min')" translate="field.error.min" translate-values="{ value: '{{mfMin}}'}"></span>
-            <span class="help-block" ng-if="showError(form.input,'max')" translate="field.error.max" translate-values="{ value: '{{mfMax}}'}"></span>
-            <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
-        </div>
+                />
+        <!--ng-click="getFocus()"-->
+        <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+        <span class="help-block" ng-if="showError(form.input,'number')" translate="field.error.number"></span>
+        <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.double"></span>
+            <span class="help-block" ng-if="showError(form.input,'min')" translate="field.error.min"
+                  translate-values="{ value: '{{mfMin}}'}"></span>
+            <span class="help-block" ng-if="showError(form.input,'max')" translate="field.error.max"
+                  translate-values="{ value: '{{mfMax}}'}"></span>
+        <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
     </ng-form>
 </div>

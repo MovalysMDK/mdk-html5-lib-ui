@@ -24,6 +24,7 @@
   "devDependencies": {},
   "private": true,
   "main": [
+    "assets/styles/css/mdk-ionic.css",
     "lib/mfuiModule.js",
     "lib/controllers/MFControllerLauncher.js",
     "lib/controllers/MFRootScopeCtrl.js",

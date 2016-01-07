@@ -1,8 +1,4 @@
-.media{
-  @include  make-sm-column(10);
-}
-
-.media-body{
-  -webkit-transform: translateZ(0);
-  min-width: 300px;
+.mdk-img-thumbnail{
+  display: inline-block;
+  width: 100%;
 }
