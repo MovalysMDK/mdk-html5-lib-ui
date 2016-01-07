@@ -31,7 +31,6 @@
     "lib/actions/MFUpdateVMWithDataLoaderAction.js",
     "lib/dataloaders/MFAbstractDataLoader.js",
     "lib/directives/MFDirectivesHelper.js",
-    "lib/directives/MFStopEvent.js",
     "lib/directives/MfFormat.js",
     "lib/directives/MfValidation.js",
     "lib/directives/MfWatchers.js",
