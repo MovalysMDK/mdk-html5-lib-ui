@@ -24,7 +24,6 @@
   "devDependencies": {},
   "private": true,
   "main": [
-    "assets/styles/css/mdk-ionic.css",
     "lib/mfuiModule.js",
     "lib/controllers/MFControllerLauncher.js",
     "lib/controllers/MFRootScopeCtrl.js",
@@ -102,10 +101,5 @@
   "resolutions": {
     "angular": "1.4.3",
     "angular-ui-router": "=0.2.15"
-  },
-  "overrides": {
-    "ionic": {
-      "main": "release/js/ionic.bundle.min.js"
-    }
   }
 }
