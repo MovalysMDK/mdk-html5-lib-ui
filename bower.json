@@ -101,5 +101,10 @@
   "resolutions": {
     "angular": "1.4.3",
     "angular-ui-router": "=0.2.15"
+  },
+  "overrides": {
+    "ionic": {
+      "main": "release/js/ionic.bundle.min.js"
+    }
   }
 }
