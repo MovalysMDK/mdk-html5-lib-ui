@@ -19,6 +19,7 @@
                 ng-disabled="!actions.isInEditionMode() || mfReadonly"
                 id="{{ ::mfId }}"
                 ng-options="item[mfField.valueAttribute] as getContent(item) | translate for item in mfField.itemsList">
+                <option value="" ng-show="mfHasBlankRow"></option>
             </select>
 
             <span class="help-block" ng-if="showError(form.select,'required')" translate="field.error.required"></span>
