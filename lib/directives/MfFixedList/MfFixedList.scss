@@ -1,3 +1,7 @@
-.delete-item-fixedlist{
-  @include  make-sm-column(10);
+.mdk-delete-item-fixedlist{
+  padding:5px;
+}
+.mdk-delete-item-fixedlist span{
+  font-size: 2rem;
+  color: #555;
 }

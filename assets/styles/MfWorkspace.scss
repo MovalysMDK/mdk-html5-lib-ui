@@ -55,6 +55,7 @@
     .#{$workspace-column-name}, .#{$master-column-name} {
       width: 50%;
       float: left;
+      position: relative;
       height: 100%;
     }
     .#{$workspace-column-name} {
