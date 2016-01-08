@@ -4,13 +4,14 @@
 
 .mdk-navbar {
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   right: 0;
   background-color: $navbar-inverse-bg;
   color: $navbar-inverse-text;
   height: $controlbar-height;
-  .title-app {
+  .mdk-title-app {
     float: left;
     height: $controlbar-height;
     font-size: 2rem;
@@ -20,15 +21,40 @@
       max-height: 5rem;
     }
 
-    ul {
-      margin-top: 0;
-
-      li {
-        padding: 0;
-      }
-    }
   }
 
+  .mdk-dropdown-menu {
+    left: auto;
+    right: 0;
+  }
+
+  .mdk-dropdown-menu .divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+  }
+
+  .mdk-dropdown-item {
+    padding: 10px 20px;
+  }
+
+  .mdk-dropdown-item:hover {
+    background-color: #f4f4f4;
+
+  }
+  .mdk-divider{
+    height: 1px;
+    overflow: hidden;
+    background-color: #e5e5e5;
+  }
+  .mdk-icon-bar {
+    width: 8px;
+    height: 8px;
+    border-radius: 1px;
+    background-color: $navbar-inverse-link;
+    margin-bottom: 4px;
+  }
   .button-snap-opened {
 
     @extend .glyphicon;
@@ -44,78 +70,11 @@
     -moz-transform: translate(-4px, 0);
   }
 
-  .active-bar {
-    margin-top: 8px;
-    height: 47px;
-    font-size: 24px;
-
-    .dropdown-menu {
-      a {
-        color: $navbar-inverse-dropdown-link;
-        cursor: pointer;
-
-        &:hover, &:focus {
-          color: $navbar-inverse-dropdown-link-hover;
-        }
-      }
-    }
+  .mdk-active-bar {
+    float: right;
+    height: $controlbar-height;
+    color: #373a3c;
+    font-size: 2rem;
+    font-weight: 400;
   }
-
-  ul {
-    margin-bottom: 0;
-
-    li {
-      padding-left: 2px;
-      padding-right: 2px;
-      vertical-align: middle;
-
-      &:last-child {
-        padding-right: 1rem;
-      }
-
-      a {
-        color: $navbar-inverse-link;
-
-        div {
-          width: 20px;
-
-          span.icon-bar {
-            display: block;
-            width: 8px;
-            height: 8px;
-            border-radius: 1px;
-            background-color: $navbar-inverse-link;
-            margin-bottom: 4px;
-            margin-left: auto;
-            margin-right: auto;
-
-            &:last-child {
-              margin-bottom: 10px;
-            }
-          }
-        }
-
-        &:hover, &:focus {
-          color: $navbar-inverse-link-hover;
-
-          span.icon-bar {
-            background-color: $navbar-inverse-link-hover;
-          }
-        }
-      }
-
-    }
-  }
-  //.navbar-header ul
-
 }
-
-//menu navbar collapsible fix
-// @media (max-width: 767px) {
-//     .visible-xs.collapse.in {
-//         display: block!important;
-//     }
-//     .visible-xs.collapse {
-//         display: none!important;
-//     }
-// }

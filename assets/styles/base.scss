@@ -23,6 +23,7 @@ body {
   list-style-type: none;
   display: block;
   border-bottom: 1px solid #545454;
+  cursor: pointer;
   padding: 5px 0px;
   text-align: center;
 }
@@ -72,7 +73,12 @@ body {
   top: 50%;
   left: 45%;
 }
-
+.mdk-valign-parent-master{
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+}
 #loading-bar-spinner .spinner-icon {
   width: 28px;
   height: 28px;
