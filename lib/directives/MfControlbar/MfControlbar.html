@@ -1,4 +1,4 @@
-<header ng-hide="!controlBarEnabled" class="mdk-navbar" role="navigation">
+<header ng-if="controlBarEnabled" class="mdk-navbar" role="navigation">
     <div class="mdk-title-app">
         <div class="mdk-valign-parent-master"></div>
         <div class="mdk-inline-align-element" ng-if="controlbar.buttonBack()">
@@ -7,7 +7,7 @@
         <div class="mdk-inline-align-element" show="::controlbar.buttonHome()">
             <a href="" ng-click="controlbar.goHome()" snap-close><img src="assets/pictures/ab_logo.png"/></a>
         </div>
-        <div class="mdk-inline-align-element" class="::controlbar.getCssShowTitle()">
+        <div class="mdk-inline-align-element ::controlbar.getCssShowTitle()">
             <!--<span refresh-on="'refreshMfTitle'" bindonce bo-text="mfTitle" ></span>-->
             <span>{{controlbar.getTitleText() | translate}}</span>
         </div>
