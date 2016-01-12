@@ -46,6 +46,7 @@ body {
   top: $controlbar-height;
   left: 0;
   right: 0;
+  z-index: 5;
   background-color: $navbar-inverse-bg;
 }
 
