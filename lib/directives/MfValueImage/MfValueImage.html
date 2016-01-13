@@ -3,8 +3,7 @@
         mf-required-field="false"
         mf-text="{{mfLabel}}"
         mf-associated-field="{{mfId}}"
-        mf-hide-label="{{mfHideLabel}}"
-        ng-if="mfLabel"
+        ng-if="!mfHideLabel"
     ></mf-label>
-    <img ng-src="{{mfField.pictureURI}}" alt="{{mfField.pictureName}}" ng-style="imgStyle()" class="mf-value-image"/>
+    <img ng-src="{{pictureURI}}" alt="{{pictureName | translate}}" mf-img-text-fallback="{{pictureName | translate}}"/>
 </div>

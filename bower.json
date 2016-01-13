@@ -33,6 +33,7 @@
     "lib/directives/MFDirectivesHelper.js",
     "lib/directives/MfFormat.js",
     "lib/directives/MfValidation.js",
+    "lib/directives/MfImgTextFallback.js",
     "lib/directives/MfWatchers.js",
     "lib/modal/ConfirmDialogCtrl.js",
     "lib/modal/DialogsConfig.js",
@@ -91,12 +92,10 @@
     "lib/viewmodels/componentsVM/MFPhotoVM.js",
     "lib/viewmodels/componentsVM/MFPictureTypeEnum.js",
     "lib/viewmodels/componentsVM/MFRadioVM.js",
-    "lib/viewmodels/componentsVM/MFValueImageVM.js",
     "lib/viewmodels/componentsVM/factories/MFAddressLocationVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFComboVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFPhotoVMFactory.js",
-    "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js",
-    "lib/viewmodels/componentsVM/factories/MFValueImageVMFactory.js"
+    "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js"
   ],
   "resolutions": {
     "angular": "1.4.3",
