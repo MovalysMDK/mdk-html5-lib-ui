@@ -47,6 +47,7 @@
     "lib/controllers/scopebuilders/MFDataViewScopeBuilder.js",
     "lib/controllers/scopebuilders/MFFormScopeBuilder.js",
     "lib/controllers/scopebuilders/MFListScopeBuilder.js",
+    "lib/controllers/scopebuilders/MFModalViewScopeBuilder.js",
     "lib/controllers/scopebuilders/MFRootScopeBuilder.js",
     "lib/controllers/scopebuilders/MFViewScopeBuilder.js",
     "lib/controllers/scopebuilders/MFWorkspaceDetailScopeBuilder.js",
