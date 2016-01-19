@@ -45,7 +45,7 @@ gulp.task('updateBower', function () {
     bowerObj.main = [];
     bowerObj.main.push('lib/mfuiModule.js');
 
-    return gulp.src('lib/**/*.js')
+    return gulp.src(['lib/**/*.js', 'assets/styles/css/*.css'])
         .pipe(feedBowerObj(bowerObj))
         .on('end', function(){
             jsonfile.spaces = 2;
@@ -63,14 +63,21 @@ gulp.task('updateBower', function () {
 function feedBowerObj(bowerObj) {
     return through.obj(function (file, enc, cb) {
 
-        var x;
+        var x,y;
         var filePath = file.path;
 
         x = filePath.lastIndexOf('lib');
-        if (x >= 0) { // Windows-based path
+        y= filePath.lastIndexOf('assets');
+
+
+        if (x > y && x >= 0) { // Windows-based path
             filePath = filePath.substr(x);
             filePath = filePath.replace(/\\/g, '/');
+        } else if(x < y && y >= 0 ){
+            filePath = filePath.substr(y);
+            filePath = filePath.replace(/\\/g, '/');
         }
+
         if (filePath !== 'lib/mfuiModule.js') {
             bowerObj.main.push(filePath);
         }

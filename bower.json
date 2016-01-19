@@ -95,7 +95,8 @@
     "lib/viewmodels/componentsVM/factories/MFAddressLocationVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFComboVMFactory.js",
     "lib/viewmodels/componentsVM/factories/MFPhotoVMFactory.js",
-    "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js"
+    "lib/viewmodels/componentsVM/factories/MFRadioVMFactory.js",
+    "assets/styles/css/mdk-ionic.css"
   ],
   "resolutions": {
     "angular": "1.4.3",
