@@ -1,9 +1,11 @@
 <header ng-if="controlBarEnabled" class="mdk-navbar" role="navigation">
     <div class="mdk-title-app">
         <div class="mdk-valign-parent-master"></div>
-                        <div class="mdk-inline-align-element" ng-if="controlbar.buttonSlidingMenu()" snap-toggle="left" ng-class="controlbar.getCssSnap()">
-                </div>
-
+        <div class="mdk-inline-align-element" ng-click="toggleSnap()" ng-if="controlbar.buttonSlidingMenu()">
+            <span class="mdk-icon-bar-burger"></span>
+            <span class="mdk-icon-bar-burger"></span>
+            <span class="mdk-icon-bar-burger"></span>
+        </div>
         <div class="mdk-inline-align-element" ng-if="controlbar.buttonBack()">
             <img src="assets/pictures/glyphicons-225-chevron-left.png" ng-click="controlbar.goBack()"/>
         </div>
@@ -18,19 +20,26 @@
     <div class="mdk-active-bar">
         <div class="mdk-valign-parent-master"></div>
         <!-- button save -->
-        <div class="mdk-inline-align-element" ng-if="controlbar.buttonSave()"><a href="" ng-click="controlbar.goSave()" snap-close><img
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonSave()"><a href="" ng-click="controlbar.goSave()"
+                                                                                 snap-close><img
                 src="assets/pictures/glyphicons-444-floppy-disk.png"/></a></div>
         <!-- button edit -->
-        <div class="mdk-inline-align-element" ng-if="controlbar.buttonEdit()"><a href="" ng-click="controlbar.goEdit()" snap-close><img
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonEdit()"><a href="" ng-click="controlbar.goEdit()"
+                                                                                 snap-close><img
                 src="assets/pictures/glyphicons-31-pencil.png"/></a></div>
         <!-- button cancel -->
-        <div class="mdk-inline-align-element" ng-if="controlbar.buttonCancel()"><a href="" ng-click="controlbar.goCancel()" snap-close><img
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonCancel()"><a href=""
+                                                                                   ng-click="controlbar.goCancel()"
+                                                                                   snap-close><img
                 src="assets/pictures/glyphicons-208-remove-2.png"/></a></div>
         <!-- button add -->
-        <div class="mdk-inline-align-element" ng-if="controlbar.buttonAdd()"><a href="" ng-click="controlbar.goAdd()" snap-close><img
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonAdd()"><a href="" ng-click="controlbar.goAdd()"
+                                                                                snap-close><img
                 src="assets/pictures/glyphicons-433-plus.png"/></a></div>
         <!-- button remove -->
-        <div class="mdk-inline-align-element" ng-if="controlbar.buttonRemove()"><a href="" ng-click="controlbar.goRemove()" snap-close><img
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonRemove()"><a href=""
+                                                                                   ng-click="controlbar.goRemove()"
+                                                                                   snap-close><img
                 src="assets/pictures/glyphicons-17-bin-white.png"/></a></div>
         <!-- button options/menu -->
         <div class="mdk-inline-align-element" show="::controlbar.buttonActionMenu()" is-open="controlbar.status.isopen">

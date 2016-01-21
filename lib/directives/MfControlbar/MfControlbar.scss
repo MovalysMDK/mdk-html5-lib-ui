@@ -43,7 +43,7 @@
     background-color: #f4f4f4;
 
   }
-  .mdk-divider{
+  .mdk-divider {
     height: 1px;
     overflow: hidden;
     background-color: #e5e5e5;
@@ -78,6 +78,16 @@
     font-weight: 400;
   }
 }
-.mdk-reset-control-bar-height{
-  top: 0!important;
+
+.mdk-reset-control-bar-height {
+  top: 0 !important;
+}
+
+.mdk-icon-bar-burger {
+  display: block;
+  background-color: #f4f4f4;
+  width: 22px;
+  height: 2px;
+  margin-bottom: 4px;
+  border-radius: 1px;
 }
