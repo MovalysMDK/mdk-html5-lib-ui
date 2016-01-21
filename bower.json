@@ -14,7 +14,7 @@
     "angular-touch": "=1.4.3",
     "angular-ui-router": "=0.2.15",
     "angular-bootstrap": "=0.14.3",
-    "angular-snap": "=1.8.3",
+    "angular-snap": "=1.8.5",
     "angular-growl-v2": "=0.7.5",
     "bootstrap-sass-official": "=3.3.5",
     "normalize-css": "=3.0.3",
