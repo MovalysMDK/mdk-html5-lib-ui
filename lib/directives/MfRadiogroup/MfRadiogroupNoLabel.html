@@ -4,7 +4,7 @@
          <div class="radio" ng-repeat="item in mfField.itemsList">
 
             <!-- switch for checked -->
-            <label class="radioLbl">
+            <label ng-if="item.value !== '0'" class="radioLbl">
                 <!-- Radio buttons doesn't support readonly attribute -->
                 <!-- @see http://stackoverflow.com/questions/1953017/why-cant-radio-buttons-be-readonly -->
 
