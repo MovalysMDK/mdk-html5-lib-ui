@@ -11,7 +11,8 @@
      <div class="radio" ng-repeat="item in mfField.itemsList">
 
         <!-- switch for checked -->
-        <label class="radioLbl">
+         <!-- ng-if is used to hide the value FWK_NONE of the enum -->
+        <label ng-if="item.value !== '0'" class="radioLbl">
             <!-- Radio buttons doesn't support readonly attribute -->
             <!-- @see http://stackoverflow.com/questions/1953017/why-cant-radio-buttons-be-readonly -->
 
