@@ -1,49 +1,56 @@
-
-ul.mflist-1D  {
-  @extend .list-group;
-
-}
-ul.mflist-1D .mflist-item {
-  @extend .list-group-item;
-}
-
-ul.mflist-1D li {
-  list-style-type: none;
+.mdk-mflist-item-1d {
+  cursor: pointer;
+  overflow: auto;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.8rem;
+  color: #444;
+  padding: 16px;
 }
 
-ul.mflist-1D .selected {
-  color: #FFFFFF;
-  background-color: #545454;
+.mdk-mflist-item-1d:hover {
+  background-color: #f4f4f4;
 }
 
-ul.mflist-1D .mflist-item:hover {
-  color: #FFFFFF;
-  background-color: #545454;
-}
-ul.mflist-1D .mflist-item.selected {
-  color: #FFFFFF;
-  background-color: #545454;
+.mdk-mflist-item-1d.selected {
+  background-color: #f4f4f4;
 }
 
-ul.mflist-1D li .mflist-item-header {
-  @extend .list-group-item-heading;
+.mdk-mflist-item-2d {
+  cursor: pointer;
+  overflow: auto;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.8rem;
+  color: #444;
 }
 
-ul.mflist-1D li .mflist-item-body {
-  @extend .list-group-item-text;
+.mdk-panel-body {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.mdk-mflist-2D {
+  display: block;
+  position: relative;
+  height: 100%;
 }
 
 .mflist-item-plus {
 
   @extend .glyphicon;
   @extend .glyphicon-plus;
-  position:absolute;
+  position: absolute;
   z-index: 300;
-  right:0;
-  top:50%;
+  right: 0;
+  top: 50%;
 
 }
-.mdk-floating-button{
+
+.mdk-floating-button {
   color: $navbar-inverse-bg;
   background-color: $navbar-inverse-text;
   font-size: 40px;
@@ -56,17 +63,12 @@ ul.mflist-1D li .mflist-item-body {
   bottom: 20px;
   right: 20px;
   box-shadow: 1px 1px 12px #555;
+  z-index: 1000;
   cursor: pointer;
 }
-.mflist-item-chevron {
 
-  @extend .glyphicon;
-  @extend .glyphicon-chevron-right;
-  position:absolute;
-  z-index: 300;
-  right:0;
-  top:50%;
-
+.mdk-mflist-item-chevron {
+  float: right;
 }
 
 /*
@@ -75,32 +77,30 @@ ul.mflist-1D li .mflist-item-body {
 ===================
 */
 
-.list-container{
-  height:100%;
-  position:relative;
+.list-container {
+  height: 100%;
+  position: relative;
 }
 
-
-
-.list-scroll{
+.list-scroll {
   position: absolute;
   top: 0;
   bottom: 0;
   width: auto;
   left: 0;
   right: 0;
-  overflow:auto;
+  overflow: auto;
 }
 
-
-.mflist-2D .mflist-sublist{
+.mflist-2D .mflist-sublist {
   @extend .list-group;
   margin-bottom: 0px;
 
 }
-.mflist-2D .mflist-sublist li{
+
+.mflist-2D .mflist-sublist li {
   @extend .list-group-item;
-  border-bottom:5px;
+  border-bottom: 5px;
 
 }
 
@@ -113,16 +113,15 @@ ul.mflist-1D li .mflist-item-body {
   @extend .list-group-item-text;
 }
 
-
 .mflist-2D .mflist-sublist li:hover {
   color: #FFFFFF;
   background-color: #545454;
 }
+
 .mflist-2D .mflist-sublist li.selected {
   color: #FFFFFF;
   background-color: #545454;
 }
-
 
 .panel-heading {
   font-size: 2rem;

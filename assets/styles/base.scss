@@ -9,6 +9,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   background-color: $container-bg;
 }
 
@@ -62,6 +63,8 @@ body {
 }
 
 .flex-item {
+  height: 100%;
+  overflow: auto;
 }
 
 .panel-list-container {
@@ -74,12 +77,14 @@ body {
   top: 50%;
   left: 45%;
 }
-.mdk-valign-parent-master{
+
+.mdk-valign-parent-master {
   display: inline-block;
   vertical-align: middle;
   height: 100%;
   width: 0;
 }
+
 #loading-bar-spinner .spinner-icon {
   width: 28px;
   height: 28px;

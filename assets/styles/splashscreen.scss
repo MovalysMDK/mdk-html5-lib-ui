@@ -1,11 +1,12 @@
 .splashscreen-container {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 40;
   background: url(../pictures/splashscreen_xl.jpg) center;
-  background-color:#E0E0E0;
+  background-color: #E0E0E0;
   -webkit-background-size: cover; /* pour Chrome et Safari */
   -moz-background-size: cover; /* pour Firefox */
   -o-background-size: cover; /* pour Opera */
@@ -15,23 +16,24 @@
 .splashscreen {
   position: absolute;
   top: 52%;
-  left:50%;
+  left: 50%;
   width: 100%;
 }
 
 .splashscreenProgressBar {
-    position: relative;
-  left:-46%;
-    width: 90%;
+  position: relative;
+  left: -46%;
+  width: 90%;
 }
 
 .splashscreenBrief {
   position: relative;
-  left:-100px;
+  left: -100px;
   top: 70%;
-    color: white;
-//  width: 200px;
+  color: white;
+  //  width: 200px;
 }
-.progress-bar{
+
+.progress-bar {
   background-color: #aaaaaa;
 }
