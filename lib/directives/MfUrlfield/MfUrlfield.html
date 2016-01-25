@@ -23,14 +23,14 @@
                     mf-validation="{{mfValidation}}"
                 />
                 <!--ng-click="getFocus()"-->
-                <span class="input-group-btn">
+                <div ng-click="navigate()" class="input-group-btn">
                     <a href="{{mfField}}"
                        ng-class="{'disabled' : (isEmpty() || showError(form.input,'pattern'))}"
                        ng-disabled="isEmpty() || showError(form.input,'pattern')"
-                       class="btn btn-default" target="_blank">
+                       class="btn btn-default" target="_system">
                     <img src="assets/pictures/glyphicons-390-new-window-alt.png"/>
                     </a>
-                </span>
+                </div>
             </div>
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
             <span class="help-block" ng-if="showError(form.input,'url')" translate="field.error.url"></span>
