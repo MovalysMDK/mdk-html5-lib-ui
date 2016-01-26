@@ -1,3 +1,19 @@
+.mdk-list-container{
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.mdk-mflist-1D{
+  overflow: auto;
+  height: 100%;
+}
+
+
 .mdk-mflist-item-1d {
   cursor: pointer;
   overflow: auto;
@@ -35,8 +51,8 @@
 
 .mdk-mflist-2D {
   display: block;
-  position: relative;
   height: 100%;
+  overflow: auto;
 }
 
 .mflist-item-plus {
