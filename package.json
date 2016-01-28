@@ -1,7 +1,7 @@
 {
   "name": "mdk-html5-lib-ui",
   "private": false,
-  "version": "1.2.0",
+  "version": "1.2.0-SNAPSHOT",
   "codename": "Cotopaxi",
   "homepage": "http://git.ntes.fr.sopra/mdk-html5-ui",
   "description": "MDK HTML5 LIB UI Framework",
