@@ -1,4 +1,4 @@
-.mdk-list-container{
+.mdk-list-container {
   display: block;
   position: absolute;
   top: 0;
@@ -8,11 +8,10 @@
   box-sizing: border-box;
 }
 
-.mdk-mflist-1D{
+.mdk-mflist-1D {
   overflow: auto;
   height: 100%;
 }
-
 
 .mdk-mflist-item-1d {
   cursor: pointer;
@@ -45,7 +44,6 @@
 
 .mdk-panel-body {
   background-color: #f4f4f4;
-  padding: 20px;
   border-top: 1px solid #ddd;
 }
 
@@ -55,15 +53,9 @@
   overflow: auto;
 }
 
-.mflist-item-plus {
-
-  @extend .glyphicon;
-  @extend .glyphicon-plus;
-  position: absolute;
-  z-index: 300;
-  right: 0;
-  top: 50%;
-
+.mdk-mflist-2D-child {
+  padding: 5px 20px;
+  border-bottom: solid 1px #ccc;
 }
 
 .mdk-floating-button {
@@ -73,7 +65,6 @@
   height: 60px;
   width: 60px;
   text-align: center;
-  line-height: 60px;
   border-radius: 60px;
   position: absolute;
   bottom: 20px;
@@ -83,15 +74,13 @@
   cursor: pointer;
 }
 
+.mdk-floating-button span {
+  vertical-align: middle;
+}
+
 .mdk-mflist-item-chevron {
   float: right;
 }
-
-/*
-===================
-== LIST 2D
-===================
-*/
 
 .list-container {
   height: 100%;
@@ -106,37 +95,6 @@
   left: 0;
   right: 0;
   overflow: auto;
-}
-
-.mflist-2D .mflist-sublist {
-  @extend .list-group;
-  margin-bottom: 0px;
-
-}
-
-.mflist-2D .mflist-sublist li {
-  @extend .list-group-item;
-  border-bottom: 5px;
-
-}
-
-.mflist-2D .mflist-item-header {
-  @extend .list-group-item-heading;
-
-}
-
-.mflist-2D .mflist-item-body {
-  @extend .list-group-item-text;
-}
-
-.mflist-2D .mflist-sublist li:hover {
-  color: #FFFFFF;
-  background-color: #545454;
-}
-
-.mflist-2D .mflist-sublist li.selected {
-  color: #FFFFFF;
-  background-color: #545454;
 }
 
 .panel-heading {
