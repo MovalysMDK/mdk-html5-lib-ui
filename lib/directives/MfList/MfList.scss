@@ -70,7 +70,7 @@
 .mdk-floating-button {
   color: $navbar-inverse-bg;
   background-color: $navbar-inverse-text;
-  font-size: 40px;
+  font-size: 21px;
   height: 60px;
   width: 60px;
   text-align: center;
@@ -85,6 +85,8 @@
 
 .mdk-floating-button span {
   vertical-align: middle;
+  margin-left: 2px;
+  margin-bottom: 2px;
 }
 
 .mdk-mflist-item-chevron {
