@@ -116,11 +116,13 @@ body {
   border-radius: 2px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-.mdk-valign-parent:before{
+
+.mdk-valign-parent:before, .mdk-valign-parent:after {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
+
 ng-form {
 }
