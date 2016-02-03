@@ -43,7 +43,7 @@
 }
 
 .panel-heading:hover {
-  background-color: #f4f4f4;
+  background-color: #e8e8e8;
 }
 
 .mdk-panel-body {
@@ -60,6 +60,7 @@
 .mdk-mflist-2D-child {
   padding: 5px 20px;
   border-bottom: solid 1px #ccc;
+  position: relative;
 }
 
 .mdk-mflist-2D-child:hover {
@@ -87,7 +88,11 @@
 }
 
 .mdk-mflist-item-chevron {
-  float: right;
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  margin-top: -12px;
+  right: 10px;
 }
 
 .list-container {
