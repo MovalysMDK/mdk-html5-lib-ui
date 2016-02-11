@@ -4,7 +4,7 @@ var gulp = require('gulp'),
     fs = require('fs'),
     through = require('through2'),
     jsonfile = require('jsonfile'),
-    sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     rename = require('gulp-rename'),
     gutil = require('gulp-util'),
     jshint = require('gulp-jshint');
@@ -18,9 +18,8 @@ gulp.task('jshint', function () {
 });
 
 gulp.task('sass', function () {
-    return sass('assets/styles/framework.scss',
-        {loadPath : ['vendor/bootstrap-sass-official/assets/stylesheets','../bootstrap-sass-official/assets/stylesheets']})
-        .on('error', sass.logError)
+    return gulp.src('assets/styles/framework.scss')
+        .pipe(sass({includePaths: ['vendor/bootstrap-sass-official/assets/stylesheets','../bootstrap-sass-official/assets/stylesheets']}).on('error', sass.logError))
         .pipe(rename('framework.css'))
         .pipe(gulp.dest('build/'));
 });
