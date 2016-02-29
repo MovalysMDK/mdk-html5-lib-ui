@@ -1,0 +1,143 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+body {
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-weight: lighter;
+  font-style: verdana;
+  color: #545454;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $container-bg;
+}
+
+.mdk-menu > ul {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+
+.mdk-menu > ul > li {
+
+  list-style-type: none;
+  display: block;
+  border-bottom: 1px solid #545454;
+  cursor: pointer;
+  padding: 5px 0px;
+  text-align: center;
+}
+
+.mdk-menu li:hover {
+
+  color: #FFFFFF;
+  background-color: #545454;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+.main-container {
+  position: fixed;
+  top: $controlbar-height;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: $navbar-inverse-bg;
+}
+
+.flex-container {
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: $controlbar-height;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.flex-item {
+  height: 100%;
+  overflow: auto;
+}
+
+.panel-list-container {
+  height: 100%;
+  position: relative;
+
+}
+
+#loading-bar-spinner {
+  top: 50%;
+  left: 45%;
+}
+
+.mdk-valign-parent-master {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  width: 0;
+}
+
+#loading-bar-spinner .spinner-icon {
+  width: 28px;
+  height: 28px;
+  border-top-color: #545454;
+  border-left-color: #545454;
+}
+
+.mdk-inline-align-container {
+  text-align: center;
+}
+
+.mdk-inline-align-element {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mdk-base-element-margin {
+  margin: 0 5px;
+}
+
+.mdk-base-container-margin {
+  margin: 0 10px;
+}
+
+.mdk-well {
+  margin: 20px 10px;
+  padding: 5px;
+  background-color: $well-bg;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.mdk-valign-parent:before, .mdk-valign-parent:after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+ng-form {
+}

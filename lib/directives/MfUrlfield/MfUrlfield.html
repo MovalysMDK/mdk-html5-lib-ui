@@ -1,0 +1,55 @@
+<!--
+    Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+
+    This file is part of Movalys MDK.
+    Movalys MDK is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    Movalys MDK is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Lesser General Public License for more details.
+    You should have received a copy of the GNU Lesser General Public License
+    along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+-->
+<div class="url-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <mf-label
+            mf-required-field="{{mfRequired}}"
+            mf-text="{{mfLabel}}"
+            mf-associated-field="{{mfId}}"
+            mf-hide-label="{{mfHideLabel}}"
+            ng-if="mfLabel"
+        ></mf-label>
+
+        <div class="url-input">
+            <div class="input-group">
+                <input
+                    type="url"
+                    class="form-control"
+                    ng-model="mfField"
+                    ng-readonly="mfReadonly"
+                    ng-required="mfRequired"
+                    ng-disabled="!actions.isInEditionMode()"
+                    placeholder="{{mfPlaceholder}}"
+                    id="::mfId"
+                    name="input"
+                    mf-validation="{{mfValidation}}"
+                />
+                <!--ng-click="getFocus()"-->
+                <div ng-click="navigate()" class="input-group-btn">
+                    <a href="{{mfField}}"
+                       ng-class="{'disabled' : (isEmpty() || showError(form.input,'pattern'))}"
+                       ng-disabled="isEmpty() || showError(form.input,'pattern')"
+                       class="btn btn-default" target="_system">
+                    <img src="assets/pictures/glyphicons-390-new-window-alt.png"/>
+                    </a>
+                </div>
+            </div>
+            <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
+            <span class="help-block" ng-if="showError(form.input,'url')" translate="field.error.url"></span>
+            <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
+        </div>
+    </ng-form>
+</div>

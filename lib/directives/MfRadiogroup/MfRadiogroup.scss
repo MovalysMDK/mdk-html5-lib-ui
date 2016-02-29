@@ -1,0 +1,50 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+.radio-group-style{
+  padding-left: 2rem;
+
+}
+
+.radio-input{
+  @include  make-sm-column(10);
+}
+
+input[type=radio] {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+    border: 0.1rem solid gray;
+    border-radius: 50%;
+    background: lightgray;
+    cursor: pointer;
+}
+
+input[type=radio]:checked {
+  background: dimgray;
+}
+
+div.radio:first-of-type {
+  margin-top: 0rem;
+}
+
+div.radio:last-of-type {
+  margin-bottom: 0rem;
+}
+
+.radioLbl {
+    display: block;
+}

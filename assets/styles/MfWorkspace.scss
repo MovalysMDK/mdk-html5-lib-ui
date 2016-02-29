@@ -1,0 +1,93 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+@function workspace-container-width($columns-number, $displayed-columns) {
+  @return ( $columns-number +1) * 100%;
+}
+
+@function workspace-column-width($columns-number) {
+  @return percentage(1 / $columns-number);
+}
+
+@mixin workspace-container-compute($container-style-name, $columns-number, $displayed-columns) {
+
+  // for each screen width define a media query
+  @each $default-displayed-column-number, $media-query in $workspace-width-media-query-size {
+
+    @media #{$media-query} {
+      @if $displayed-columns == -1 {
+        $default-displayed-columns: $default-displayed-column-number !default;
+        @if $default-displayed-columns > $columns-number {
+          $default-displayed-columns: $columns-number;
+        }
+
+        .#{$container-style-name} {
+          width: workspace-container-width($columns-number, $default-displayed-columns);
+          overflow: auto;
+          height: 100%;
+        }
+      } @else {
+        .#{$container-style-name} {
+          width: workspace-container-width($columns-number, $displayed-columns);
+          height: 100%;
+        }
+      }
+    }
+
+  }
+
+}
+
+@if $application-workspace-styles != null {
+  @each $wks, $values in $application-workspace-styles {
+
+    $workspace-columns-number: 1 !default;
+    @if map-has-key($values, workspace-columns-number) {
+      $workspace-columns-number: map-get($values, workspace-columns-number);
+    }
+    $workspace-displayed-columns: -1 !default;
+    @if map-has-key($values, workspace-displayed-columns) {
+      $workspace-displayed-columns: map-get($values, workspace-displayed-columns);
+    }
+
+    $workspace-container-style-name: #{$wks}-workspace-container;
+
+    $master-column-name: #{$wks}-master-column;
+    $workspace-column-name: #{$wks}-workSpace-column;
+
+    .#{$workspace-column-name}, .#{$master-column-name} {
+      width: 50%;
+      float: left;
+      position: relative;
+      height: 100%;
+    }
+    .#{$workspace-column-name} {
+      overflow: auto;
+    }
+    /*
+    .#{$workspace-container-style-name} {
+    }
+    */
+    @include workspace-container-compute($workspace-container-style-name, $workspace-columns-number, $workspace-displayed-columns);
+
+  }
+
+}
+
+.mdk-workSpace-column {
+  height: 100%;
+  float: left;
+  width: 100%;
+}

@@ -1,0 +1,72 @@
+<!--
+    Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+
+    This file is part of Movalys MDK.
+    Movalys MDK is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    Movalys MDK is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Lesser General Public License for more details.
+    You should have received a copy of the GNU Lesser General Public License
+    along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+-->
+<header ng-if="controlBarEnabled" class="mdk-navbar" role="navigation">
+    <div class="mdk-title-app">
+        <div class="mdk-valign-parent-master"></div>
+        <div class="mdk-inline-align-element" ng-click="toggleSnap()" ng-if="controlbar.buttonSlidingMenu()">
+            <span class="mdk-icon-bar-burger"></span>
+            <span class="mdk-icon-bar-burger"></span>
+            <span class="mdk-icon-bar-burger"></span>
+        </div>
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonBack()">
+            <img src="assets/pictures/glyphicons-225-chevron-left.png" ng-click="controlbar.goBack()"/>
+        </div>
+        <div class="mdk-inline-align-element" show="::controlbar.buttonHome()">
+            <a href="" ng-click="controlbar.goHome()" snap-close><img src="assets/pictures/ab_logo.png"/></a>
+        </div>
+        <div class="mdk-inline-align-element ::controlbar.getCssShowTitle()">
+            <!--<span refresh-on="'refreshMfTitle'" bindonce bo-text="mfTitle" ></span>-->
+            <span>{{controlbar.getTitleText() | translate}}</span>
+        </div>
+    </div>
+    <div class="mdk-active-bar">
+        <div class="mdk-valign-parent-master"></div>
+        <!-- button save -->
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonSave()"><a href="" ng-click="controlbar.goSave()"
+                                                                                 snap-close><img
+                src="assets/pictures/glyphicons-444-floppy-disk.png"/></a></div>
+        <!-- button edit -->
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonEdit()"><a href="" ng-click="controlbar.goEdit()"
+                                                                                 snap-close><img
+                src="assets/pictures/glyphicons-31-pencil.png"/></a></div>
+        <!-- button cancel -->
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonCancel()"><a href=""
+                                                                                   ng-click="controlbar.goCancel()"
+                                                                                   snap-close><img
+                src="assets/pictures/glyphicons-208-remove-2.png"/></a></div>
+        <!-- button remove -->
+        <div class="mdk-inline-align-element" ng-if="controlbar.buttonRemove()"><a href=""
+                                                                                   ng-click="controlbar.goRemove()"
+                                                                                   snap-close><img
+                src="assets/pictures/glyphicons-17-bin-white.png"/></a></div>
+        <!-- button options/menu -->
+        <div class="mdk-inline-align-element" show="::controlbar.buttonActionMenu()" is-open="controlbar.status.isopen">
+            <div class="mdk-base-container-margin" data-toggle="dropdown">
+                <div class="mdk-icon-bar"></div>
+                <div class="mdk-icon-bar"></div>
+                <div class="mdk-icon-bar"></div>
+            </div>
+
+            <ul class="dropdown-menu mdk-dropdown-menu" aria-labelledby="menu-button">
+                <li class="mdk-dropdown-item" role="menuitem">Help</li>
+                <li class="mdk-divider"></li>
+                <li class="mdk-dropdown-item" role="menuitem">Settings</li>
+                <li class="mdk-divider"></li>
+                <li class="mdk-dropdown-item" role="menuitem">Exit</li>
+            </ul>
+        </div>
+    </div>
+</header>

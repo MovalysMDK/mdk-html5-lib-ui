@@ -1,0 +1,133 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+.mdk-list-container {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.mdk-mflist-1D {
+  overflow: auto;
+  height: 100%;
+}
+
+.mdk-mflist-item-1d {
+  cursor: pointer;
+  overflow: auto;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.8rem;
+  color: #444;
+  padding: 16px;
+}
+
+.mdk-mflist-item-1d:hover {
+  background-color: #f4f4f4;
+}
+
+.mdk-mflist-item-1d.selected {
+  background-color: #f4f4f4;
+}
+
+.mdk-mflist-item-2d {
+  cursor: pointer;
+  overflow: auto;
+  position: relative;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.8rem;
+  color: #444;
+}
+
+.panel-heading:hover {
+  background-color: #e8e8e8;
+}
+
+.mdk-panel-body {
+  background-color: #f4f4f4;
+  border-top: 1px solid #ddd;
+}
+
+.mdk-mflist-2D {
+  display: block;
+  height: 100%;
+  overflow: auto;
+}
+
+.mdk-mflist-2D-child {
+  padding: 5px 20px;
+  border-bottom: solid 1px #ccc;
+  position: relative;
+}
+
+.mdk-mflist-2D-child:hover {
+  background-color: #e8e8e8;
+}
+
+.mdk-floating-button {
+  color: $navbar-inverse-bg;
+  background-color: $navbar-inverse-text;
+  font-size: 21px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 1px 1px 12px #555;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.mdk-floating-button span {
+  vertical-align: middle;
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+.mdk-mflist-item-chevron {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  margin-top: -12px;
+  right: 10px;
+}
+
+.list-container {
+  height: 100%;
+  position: relative;
+}
+
+.list-scroll {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+
+.panel-heading {
+  font-size: 2rem;
+  position: relative;
+}

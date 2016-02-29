@@ -1,0 +1,53 @@
+<!--
+    Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+
+    This file is part of Movalys MDK.
+    Movalys MDK is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    Movalys MDK is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Lesser General Public License for more details.
+    You should have received a copy of the GNU Lesser General Public License
+    along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+-->
+<div class=" {{::mfCssClassContainer}} form-group address-location-style"
+     ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <mf-doublefield
+                mf-field="mfField.latitude"
+                mf-label="{{'field.mfaddresslocation.lat.label' | translate}}"
+                mf-placeholder="{{mfLatitudePlaceholder}}"
+                mf-required="mfRequired"
+                mf-readonly="mfReadonly"
+                mf-css-class-container="mfCssClassContainer"
+                >
+
+        </mf-doublefield>
+        <mf-doublefield
+                mf-field="mfField.longitude"
+                mf-label="{{ 'field.mfaddresslocation.lng.label' | translate}}"
+                mf-placeholder="{{mfLongitudePlaceholder}}"
+                mf-required="mfRequired"
+                mf-readonly="mfReadonly"
+                mf-css-class-container="mfCssClassContainer"
+                ></mf-doublefield>
+        <div class="mdk-inline-align-container mdk-base-container-margin">
+            <div class="mdk-inline-align-element mdk-base-element-margin">
+                <button ng-click="getCurrentPosition()" ng-disabled="mfReadonly || !actions.isInEditionMode()"
+                        class="btn btn-default"><img src="assets/pictures/glyphicons-186-screenshot.png"/></button>
+            </div>
+            <div class="mdk-inline-align-element mdk-base-element-margin">
+                <a href="{{positionURL}}" class="btn btn-default" target="_blank" title="{{mfLabel}}"
+                   ng-disabled="positionURL === '#'"><img src="assets/pictures/glyphicons-243-google-maps.png"/></a>
+            </div>
+            <div class="mdk-inline-align-element mdk-base-element-margin">
+                <button ng-click="clearFields()" ng-disabled="mfReadonly || !actions.isInEditionMode()"
+                        class="btn btn-default"><img src="assets/pictures/glyphicons-193-circle-remove.png"/>
+                </button>
+            </div>
+        </div>
+    </ng-form>
+</div>

@@ -1,0 +1,55 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+@import 'variables';
+@import 'bootstrap';
+
+@import 'base';
+@import 'form';
+@import 'helpers';
+@import 'MfWorkspace';
+@import 'splashscreen';
+
+@import '../../lib/modal/dialogs';
+
+@import '../../lib/directives/MfAddressLocation/MfAddressLocation';
+@import '../../lib/directives/MfCheckbox/MfCheckbox';
+@import '../../lib/directives/MfCombo/MfCombo';
+@import '../../lib/directives/MfControlbar/MfControlbar';
+@import '../../lib/directives/MfDate/MfDate';
+@import '../../lib/directives/MfDateTime/MfDatetime';
+@import '../../lib/directives/MfDoublefield/MfDoublefield';
+@import '../../lib/directives/MfEmailfield/MfEmailfield';
+@import '../../lib/directives/MfFixedList/MfFixedList';
+@import '../../lib/directives/MfIntegerfield/MfIntegerfield';
+@import '../../lib/directives/MfLabel/MfLabel';
+@import '../../lib/directives/MfList/MfList';
+@import '../../lib/directives/MfMultilinefield/MfMultilinefield';
+@import '../../lib/directives/MfPhonefield/MfPhonefield';
+@import '../../lib/directives/MfPhoto/MfPhoto';
+@import '../../lib/directives/MfRadiogroup/MfRadiogroup';
+@import '../../lib/directives/MfSlideMenu/MfSlideMenu';
+@import '../../lib/directives/MfSlider/MfSlider';
+@import '../../lib/directives/MfSubcontrolbar/MfSubcontrolbar';
+@import '../../lib/directives/MfTextfield/MfTextfield';
+@import '../../lib/directives/MfTextview/MfTextview';
+@import '../../lib/directives/MfUrlfield/MfUrlfield';
+@import '../../lib/directives/MfSignature/MfSignature';
+@import '../../lib/directives/MfValueImage/MfValueImage';
+@import '../../lib/directives/MfImgTextFAllback';
+
+
+@import 'responsive-utilities-3.2';
+@import 'type-3.2';

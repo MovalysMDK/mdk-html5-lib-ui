@@ -1,0 +1,60 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+
+snap-content,
+[snap\:content],
+[snap-content],
+[data-snap-content],
+[x-snap-content],
+.snap-content,
+.x-snap-content,
+snap-drawers,
+[snap\:drawers],
+[snap-drawers],
+[data-snap-drawers],
+[x-snap-drawers],
+.snap-drawers,
+.x-snap-drawers,
+.snap-drawers,
+.snap-content {
+}
+
+snap-drawer,
+[snap\:drawer],
+[snap-drawer],
+[data-snap-drawer],
+[x-snap-drawer],
+.snap-drawer,
+.x-snap-drawer,
+.snap-drawer {
+
+    height: 100%;
+}
+
+.snap-content {
+    background-color: $container-bg;
+    -moz-box-shadow: 0 0 20px #888;
+    -webkit-box-shadow: 0 0 20px #888;
+    box-shadow: 0 0 20px #888;
+}
+
+.snapWithMargin{
+	margin-top: $controlbar-height;
+}
+
+.snapWithoutMargin{
+	margin-top: 0px;
+}

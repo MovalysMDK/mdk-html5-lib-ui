@@ -1,0 +1,59 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+/**
+ * These are the variables used throughout the application. This is where
+ * overwrites that are specific to Movalys MDK HTML5 should be maintained.
+ * cf: http://getbootstrap.com/customize/#less-variables
+ */
+
+// Grays
+// -------------------------
+
+$gray-darker:            lighten(#000, 13.5%) !default; // #222
+$gray-dark:              lighten(#000, 20%) !default;   // #333
+$gray:                   lighten(#000, 33.5%) !default; // #555
+$gray-light:             lighten(#000, 60%) !default;   // #999
+$gray-lighter:           lighten(#000, 93.5%) !default; // #eee
+
+
+// Global colors
+// --------------------------------------------------
+$brand-red: #e31f21 !default;
+
+// Navbar inverse
+// -------------------------
+$navbar-inverse-bg: $brand-red !default;
+$navbar-inverse-text: white !default;
+$navbar-inverse-link: white !default;
+$navbar-inverse-link-hover: $gray-light !default;
+
+$navbar-inverse-dropdown-link: $gray-darker !default;
+$navbar-inverse-dropdown-link-hover: $gray !default;
+
+$controlbar-height: 55px !default;
+
+$container-bg: white !default;
+
+$workspace-width-media-query-size: (
+        1 : "all",
+        2 : "all and (min-width: 800px)",
+        3 : "all and (min-width: 1200px)",
+        4 : "all and (min-width: 1600px)"
+) !default;
+
+$application-workspace-styles: null !default;
+
+$icon-font-path:'../fonts/' !default;

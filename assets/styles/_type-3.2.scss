@@ -1,0 +1,48 @@
+/**
+ * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+ *
+ * This file is part of Movalys MDK.
+ * Movalys MDK is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * Movalys MDK is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+ */
+//
+// Typography BOOTSTRAP 3.2. Current seed uses bootstrap 3.0
+// --------------------------------------------------
+
+
+// Contextual backgrounds
+// [converter] $parent hack
+@mixin bg-variant($parent, $color) {
+  #{$parent} {
+    background-color: $color;
+  }
+  a#{$parent}:hover {
+    background-color: darken($color, 10%);
+  }
+}
+
+// Contextual backgrounds
+// For now we'll leave these alongside the text classes until v4 when we can
+// safely shift things around (per SemVer rules).
+.bg-primary {
+  // Given the contrast here, this is the only class to have its color inverted
+  // automatically.
+  color: #fff;
+}
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $state-success-bg);
+
+@include bg-variant('.bg-info', $state-info-bg);
+
+@include bg-variant('.bg-warning', $state-warning-bg);
+
+@include bg-variant('.bg-danger', $state-danger-bg);

@@ -1,0 +1,7 @@
+.project
+node_modules
+vendor
+build
+.sass-cache
+.settings
+.idea

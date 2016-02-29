@@ -1,0 +1,33 @@
+<!--
+    Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+
+    This file is part of Movalys MDK.
+    Movalys MDK is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Lesser General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    Movalys MDK is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+    GNU Lesser General Public License for more details.
+    You should have received a copy of the GNU Lesser General Public License
+    along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+-->
+<div class="slide-style form-group form-without-label {{::mfCssClassContainer}} offset-no-label" ng-class="getCssError(form.input)">
+    <ng-form name="form">
+        <span class="span-input" bo-class="getCssClassesInputContainer()" data-snap-ignore="true">
+                <input style="width:80%; display: inline;" type="range" min='{{mfMinValue}}' max='{{mfMaxValue}}' step='{{mfStepValue}}'
+                       ng-model="mfField"
+                       ng-readonly="mfReadonly"
+                       ng-required="mfRequired"
+                       ng-disabled="!actions.isInEditionMode()"
+                       mf-validation="{{mfValidation}}"
+                       name="input">
+        </span>
+        <span class="span-value-field">
+            <h4  ng-show="showValue" style="float:right; margin-top:2pt; width: 18%">{{mfField}}</h4>
+        </span>
+
+        <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
+    </ng-form>
+</div>
