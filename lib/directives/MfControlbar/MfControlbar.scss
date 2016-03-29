@@ -37,27 +37,7 @@
     }
 
   }
-
-  .mdk-dropdown-menu {
-    left: auto;
-    right: 0;
-  }
-
-  .mdk-dropdown-menu .divider {
-    height: 1px;
-    margin: 9px 0;
-    overflow: hidden;
-    background-color: #e5e5e5;
-  }
-
-  .mdk-dropdown-item {
-    padding: 10px 20px;
-  }
-
-  .mdk-dropdown-item:hover {
-    background-color: #f4f4f4;
-
-  }
+  
   .mdk-divider {
     height: 1px;
     overflow: hidden;
@@ -91,6 +71,7 @@
     color: #373a3c;
     font-size: 2rem;
     font-weight: 400;
+    margin-right: 8px;
   }
 }
 
