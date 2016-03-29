@@ -11,7 +11,7 @@
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
     GNU Lesser General Public License for more details.
     You should have received a copy of the GNU Lesser General Public License
-    along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+    along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>. 
 -->
 <header ng-if="controlBarEnabled" class="mdk-navbar" role="navigation">
     <div class="mdk-title-app">
@@ -52,21 +52,5 @@
                                                                                    ng-click="controlbar.goRemove()"
                                                                                    snap-close><img
                 src="assets/pictures/glyphicons-17-bin-white.png"/></a></div>
-        <!-- button options/menu -->
-        <div class="mdk-inline-align-element" show="::controlbar.buttonActionMenu()" is-open="controlbar.status.isopen">
-            <div class="mdk-base-container-margin" data-toggle="dropdown">
-                <div class="mdk-icon-bar"></div>
-                <div class="mdk-icon-bar"></div>
-                <div class="mdk-icon-bar"></div>
-            </div>
-
-            <ul class="dropdown-menu mdk-dropdown-menu" aria-labelledby="menu-button">
-                <li class="mdk-dropdown-item" role="menuitem">Help</li>
-                <li class="mdk-divider"></li>
-                <li class="mdk-dropdown-item" role="menuitem">Settings</li>
-                <li class="mdk-divider"></li>
-                <li class="mdk-dropdown-item" role="menuitem">Exit</li>
-            </ul>
-        </div>
     </div>
 </header>
