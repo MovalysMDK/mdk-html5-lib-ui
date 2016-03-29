@@ -17,8 +17,3 @@
   @include make-sm-column-offset(2);
   @include make-sm-column(10);
 }
-
-input[type="checkbox"].inputCheckBox {
-    margin-left: 0px;
-  margin-right: 15px;
-}
