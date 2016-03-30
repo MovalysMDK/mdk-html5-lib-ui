@@ -17,6 +17,7 @@
     "undef": true,
     "unused":"vars",
     "strict": true,
+    "latedef": false,
 
 
     "eqnull":true,
@@ -33,7 +34,8 @@
         "FastClick": false,
         "SQLite3JS": false,
         "module" :false,
-        "Modernizr":false
+        "Modernizr":false,
+        "cordova" : false
     },
     "browser": true,
     "devel":true,
