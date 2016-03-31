@@ -13,6 +13,7 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
  */
+ 
 .checkbox {
   @include make-sm-column-offset(2);
   @include make-sm-column(10);
@@ -26,10 +27,14 @@
 
 .checkbox {
     padding-left: 25px !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 input[type="checkbox"].inputCheckBox {
     margin-right: 15px;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
 input[type="checkbox"] {
@@ -38,4 +43,6 @@ input[type="checkbox"] {
   line-height: normal;
   height: 22px;
   width: 22px;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
 }

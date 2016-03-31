@@ -15,6 +15,17 @@
 -->
 <div class="checkbox-style {{::mfCssClassContainer}} mdk-base-element-margin" ng-class="getCssError(form.input)">
     <ng-form name="form">
+        
+        <!--<div class="checkbox" ng-click="youShallNotPass($event)"
+                >
+            <label>
+                <input type="checkbox" value="" id="::mfLabelId">
+                <!-- override icon here -->
+                <!--<span class="glyphicon glyphicon-ok"></span>
+                Option one is this and that&mdash;be sure to include why it's great
+            </label>
+        </div>-->
+        
         <div class="checkbox">
              <label>
                  <input
@@ -24,9 +35,7 @@
                          ng-readonly="mfReadonly"
                          ng-required="mfRequired"
                          ng-disabled="!actions.isInEditionMode() || mfReadonly"
-                         ng-click=$event.stopPropagation()
                          mf-validation="{{mfValidation}}"
-                         id="::mfId"
                          name="input"
                          />
                 <div ng-if="!hideLabel()"><span>{{mfLabel | translate}}</span><span ng-if="requiredField()"> *</span></div>
