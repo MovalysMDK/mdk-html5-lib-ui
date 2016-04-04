@@ -15,12 +15,12 @@
 -->
 <div class="radio-group-style form-group {{::mfCssClassContainer}}">
 	<mf-label
-        mf-required-field="{{mfRequired}}"
-        mf-text="{{mfLabel}}"
-        mf-associated-field="{{mfId}}"
-        mf-hide-label="{{mfHideLabel}}"
-        ng-if="mfLabel"
-    ></mf-label>
+        mf-required-field="{{::mfRequired}}"
+        mf-text="{{::mfLabel}}"
+        mf-associated-field="{{::mfId}}"
+        mf-hide-label="{{::mfHideLabel}}"
+        ng-if="::(!mfHideLabel && mfLabel)"
+        ></mf-label>
 
      <!-- @see http://getbootstrap.com/css/#forms-controls -->
      <div class="radio" ng-repeat="item in mfField.itemsList">

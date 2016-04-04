@@ -16,11 +16,11 @@
 <div class="slide-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <mf-label
-                mf-required-field="{{mfRequired}}"
-                mf-text="{{mfLabel}}"
-                mf-associated-field="{{mfId}}"
-                mf-hide-label="{{mfHideLabel}}"
-                ng-if="mfLabel"
+                mf-required-field="{{::mfRequired}}"
+                mf-text="{{::mfLabel}}"
+                mf-associated-field="{{::mfId}}"
+                mf-hide-label="{{::mfHideLabel}}"
+                ng-if="::(!mfHideLabel && mfLabel)"
                 ></mf-label>
         <span class="span-input" data-snap-ignore="true">
                 <input style="width:80%; display: inline;" type="range" min='{{mfMinValue}}' max='{{mfMaxValue}}' step='{{mfStepValue}}'

@@ -15,10 +15,11 @@
 -->
 <div class="radio-group-style form-group {{::mfCssClassContainer}}">
     <mf-label
-            mf-required-field="{{mfRequired}}"
-            mf-text="{{mfLabel}}"
-            mf-associated-field="{{mfId}}"
-            ng-if="mfLabel"
+            mf-required-field="{{::mfRequired}}"
+            mf-text="{{::mfLabel}}"
+            mf-associated-field="{{::mfId}}"
+            mf-hide-label="{{::mfHideLabel}}"
+            ng-if="::(!mfHideLabel && mfLabel)"
             ></mf-label>
 
     <span ng-repeat="item in mfField.itemsList"

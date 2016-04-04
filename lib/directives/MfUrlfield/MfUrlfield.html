@@ -16,12 +16,12 @@
 <div class="url-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <mf-label
-            mf-required-field="{{mfRequired}}"
-            mf-text="{{mfLabel}}"
-            mf-associated-field="{{mfId}}"
-            mf-hide-label="{{mfHideLabel}}"
-            ng-if="mfLabel"
-        ></mf-label>
+            mf-required-field="{{::mfRequired}}"
+            mf-text="{{::mfLabel}}"
+            mf-associated-field="{{::mfId}}"
+            mf-hide-label="{{::mfHideLabel}}"
+            ng-if="::(!mfHideLabel && mfLabel)"
+            ></mf-label>
 
         <div class="url-input">
             <div class="input-group">

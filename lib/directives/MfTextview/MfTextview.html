@@ -15,12 +15,12 @@
 -->
 <div class="textview-style form-group {{::mfCssClassContainer}}">
     <mf-label
-        mf-required-field="false"
-        mf-text="{{mfLabel}}"
-        mf-associated-field="{{mfId}}"
-        mf-hide-label="{{mfHideLabel}}"
-        ng-if="mfLabel"
-    ></mf-label>
+        mf-required-field="{{::mfRequired}}"
+        mf-text="{{::mfLabel}}"
+        mf-associated-field="{{::mfId}}"
+        mf-hide-label="{{::mfHideLabel}}"
+        ng-if="::(!mfHideLabel && mfLabel)"
+        ></mf-label>
 
     <div
         class="mfTextview"
