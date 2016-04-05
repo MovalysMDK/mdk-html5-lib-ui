@@ -20,3 +20,7 @@
 .span-value-field{
   @include  make-sm-column(1);
 }
+
+.slider-label {
+    padding-left: 10px !important;
+}
