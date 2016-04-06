@@ -15,7 +15,7 @@
 -->
 <div class="url-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
-        <mf-label
+        <mf-label style="margin-left:10px;"
             mf-required-field="{{::mfRequired}}"
             mf-text="{{::mfLabel}}"
             mf-associated-field="{{::mfId}}"
@@ -38,7 +38,7 @@
                     mf-validation="{{mfValidation}}"
                 />
                 <!--ng-click="getFocus()"-->
-                <div ng-click="navigate()" class="input-group-btn">
+                <div ng-click="navigate()" class="input-group-btn mfUrlField-button">
                     <a href="{{mfField}}"
                        ng-class="{'disabled' : (isEmpty() || showError(form.input,'pattern'))}"
                        ng-disabled="isEmpty() || showError(form.input,'pattern')"
