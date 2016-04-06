@@ -13,10 +13,91 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
  */
-.span-input{
-  @include  make-sm-column(10);
+
+
+.mdk-value-slider {
+  float: left;
+  text-align: center;
+  width: 20%;
+
 }
 
-.span-value-field{
-  @include  make-sm-column(1);
+.mdk-slider-container {
+  padding: 15px 15px;
+  overflow: hidden;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  text-align: center;
 }
+
+.mdk-slider {
+  position: relative;
+  float: left;
+  height: 3px;
+  background-color: #bbb;
+  width: 80%;
+}
+
+.mdk-slider[disabled] .mdk-slider-active{
+  display : none;
+}
+
+.mdk-slider[disabled] .mdk-slider-disable{
+  display : block;
+}
+
+.mdk-slider-active {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  background-color: #e74c3c;
+}
+
+.mdk-slider-disable{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  display: none;
+}
+
+.mdk-slider-pointer {
+  position: absolute;
+  top: 50%;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: #e74c3c ;
+  right: 0;
+  margin-right: -15px;
+  margin-top: -15px;
+  cursor: pointer;
+  -moz-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+  -o-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+}
+
+.mdk-slider-pointer-disable {
+  position: absolute;
+  top: 50%;
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  background-color: #bbb ;
+  right: 0;
+  margin-right: -8px;
+  margin-top: -8px;
+  cursor: pointer;
+  -moz-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+  -o-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+}
+
