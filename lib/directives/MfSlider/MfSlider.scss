@@ -14,6 +14,9 @@
  * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
  */
 
+.slider-label {
+  padding-left: 10px !important;
+}
 
 .mdk-value-slider {
   float: left;
@@ -41,12 +44,12 @@
   width: 80%;
 }
 
-.mdk-slider[disabled] .mdk-slider-active{
-  display : none;
+.mdk-slider[disabled] .mdk-slider-active {
+  display: none;
 }
 
-.mdk-slider[disabled] .mdk-slider-disable{
-  display : block;
+.mdk-slider[disabled] .mdk-slider-disable {
+  display: block;
 }
 
 .mdk-slider-active {
@@ -58,7 +61,7 @@
   background-color: #e74c3c;
 }
 
-.mdk-slider-disable{
+.mdk-slider-disable {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -73,15 +76,15 @@
   height: 30px;
   width: 30px;
   border-radius: 15px;
-  background-color: #e74c3c ;
+  background-color: #e74c3c;
   right: 0;
   margin-right: -15px;
   margin-top: -15px;
   cursor: pointer;
-  -moz-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
-  -o-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
-  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
 .mdk-slider-pointer-disable {
@@ -90,14 +93,14 @@
   height: 16px;
   width: 16px;
   border-radius: 8px;
-  background-color: #bbb ;
+  background-color: #bbb;
   right: 0;
   margin-right: -8px;
   margin-top: -8px;
   cursor: pointer;
-  -moz-box-shadow: 4px 4px 2px 0px rgba(0,0,0,0.5);
-  -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
-  -o-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
-  box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 4px 4px 2px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  -o-box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
 }
 
