@@ -1,23 +1,34 @@
 /**
- * Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
- *
- * This file is part of Movalys MDK.
- * Movalys MDK is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- * Movalys MDK is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU Lesser General Public License for more details.
- * You should have received a copy of the GNU Lesser General Public License
- * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
- */
+* Copyright (C) 2016 Sopra Steria Group (movalys.support@soprasteria.com)
+*
+* This file is part of Movalys MDK.
+* Movalys MDK is free software: you can redistribute it and/or modify
+* it under the terms of the GNU Lesser General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+* Movalys MDK is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* GNU Lesser General Public License for more details.
+* You should have received a copy of the GNU Lesser General Public License
+* along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
+*/
 body {
   -webkit-font-smoothing: subpixel-antialiased;
   font-weight: lighter;
   font-style: verdana;
   color: #545454;
+}
+
+@media all and (max-device-width: 480px)
+{
+  body{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* IE/Edge */
+    user-select: none;           /* non-prefixed version, currently*/
+  }
 }
 
 .container {
