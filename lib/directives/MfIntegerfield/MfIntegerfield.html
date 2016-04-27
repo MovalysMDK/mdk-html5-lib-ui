@@ -23,7 +23,6 @@
             ng-if="::(!mfHideLabel && mfLabel)"
             ></mf-label>
 
-        <div class="integer-input">
             <input
                 type="number"
                 class="form-control"
@@ -46,6 +45,5 @@
             <span class="help-block" ng-if="showError(form.input,'min')" translate="field.error.min" translate-values="{ value: '{{mfMin}}'}"></span>
             <span class="help-block" ng-if="showError(form.input,'max')" translate="field.error.max" translate-values="{ value: '{{mfMax}}'}"></span>
             <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
-        </div>
     </ng-form>
 </div>

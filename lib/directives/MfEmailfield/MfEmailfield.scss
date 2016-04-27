@@ -13,13 +13,6 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
  */
-.email-input{
-  @include  make-sm-column(10);
-  padding-left: 5px !important;
-  padding-right: 5px !important;
-  padding-top: 5px !important;
-  padding-bottom: 4px !important;
-}
 
 div.input-group input[type=email] {
   line-height: 20px;

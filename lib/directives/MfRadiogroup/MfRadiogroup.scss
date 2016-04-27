@@ -17,10 +17,6 @@
   padding-left: 2rem;
 }
 
-.radio-input{
-  @include  make-sm-column(10);
-}
-
 .radio label, .checkbox label {
     padding-left: 25px !important;
 }

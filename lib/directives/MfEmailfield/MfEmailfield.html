@@ -23,7 +23,6 @@
             ng-if="::(!mfHideLabel && mfLabel)"
             ></mf-label>
 
-        <div class="email-input">
             <div class="input-group">
                 <input
                     type="email"
@@ -51,7 +50,6 @@
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
             <span class="help-block" ng-if="showError(form.input,'pattern')" translate="field.error.email"></span>
             <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
-        </div>
     </ng-form>
 </div>
 

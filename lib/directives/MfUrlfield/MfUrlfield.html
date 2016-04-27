@@ -23,7 +23,6 @@
             ng-if="::(!mfHideLabel && mfLabel)"
             ></mf-label>
 
-        <div class="url-input">
             <div class="input-group">
                 <input
                     type="url"
@@ -50,6 +49,5 @@
             <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>
             <span class="help-block" ng-if="showError(form.input,'url')" translate="field.error.url"></span>
             <span class="help-block" ng-if="showError(form.input,'customValidator')" translate="{{msgError}}"></span>
-        </div>
     </ng-form>
 </div>

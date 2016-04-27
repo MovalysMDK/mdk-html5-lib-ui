@@ -22,7 +22,6 @@
                 mf-hide-label="{{::mfHideLabel}}"
                 ng-if="::(!mfHideLabel && mfLabel)"
                 ></mf-label>
-        <div class="signature-input" data-snap-ignore="true">
             <canvas
                     name="canvas"
                     ng-disabled="!actions.isInEditionMode() || mfReadonly"
@@ -34,6 +33,5 @@
             </canvas>
             <span ng-click="clear()" ng-disabled="!actions.isInEditionMode() || mfReadonly"><img src="assets/pictures/glyphicons-17-bin.png"/></span>
             <span class="help-block" ng-if="showError(form,'required')" translate="field.error.required"></span>
-        </div>
     </ng-form>
 </div>

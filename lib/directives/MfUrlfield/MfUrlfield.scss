@@ -13,9 +13,6 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with Movalys MDK. If not, see <http://www.gnu.org/licenses/>.
  */
-.url-input{
-  @include  make-sm-column(10);
-}
 
 .input-group input[type=url] {
   line-height: 20px;
