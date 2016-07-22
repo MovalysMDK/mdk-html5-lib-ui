@@ -16,11 +16,11 @@
 <div class="textfield-style form-group {{::mfCssClassContainer}}" ng-class="getCssError(form.input)">
     <ng-form name="form">
         <mf-label class="mfTextField-label"
-                mf-required-field="{{::mfRequired}}"
-                mf-text="{{::mfLabel}}"
-                mf-associated-field="{{::mfId}}"
-                mf-hide-label="{{::mfHideLabel}}"
-                ng-if="::(!mfHideLabel && mfLabel)"
+                  mf-required-field="{{::mfRequired}}"
+                  mf-text="{{::mfLabel}}"
+                  mf-associated-field="{{::mfId}}"
+                  mf-hide-label="{{::mfHideLabel}}"
+                  ng-if="::(!mfHideLabel && mfLabel)"
                 ></mf-label>
         <input
                 class="form-control"
@@ -36,6 +36,7 @@
                 mf-validation="{{mfValidation}}"
                 typeahead="{{mfTypehead}}"
                 typeahead-editable="{{mfTypeaheadEditable}}"
+                mf-on-focus-centered
                 />
         <!--ng-click="getFocus()"-->
         <span class="help-block" ng-if="showError(form.input,'required')" translate="field.error.required"></span>

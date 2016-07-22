@@ -72,6 +72,7 @@
     "lib/directives/MfList/MfSuspendableItem.js",
     "lib/directives/MfMinimizedLocation/MfMinimizedLocation.js",
     "lib/directives/MfMultilinefield/MfMultilinefield.js",
+    "lib/directives/MfOnFocusCentered/MfOnFocusCentered.js",
     "lib/directives/MfPhonefield/MfPhonefield.js",
     "lib/directives/MfPhoto/MfPhoto.js",
     "lib/directives/MfPhoto/MfPhotoInputUpdate.js",
